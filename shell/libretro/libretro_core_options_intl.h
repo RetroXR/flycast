@@ -310,6 +310,7 @@ extern "C" {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_AR NULL
 #define OPTION_VAL_VMU_AR NULL
 #define OPTION_VAL_PURUPURU_AR NULL
+#define OPTION_VAL_MICROPHONE_AR NULL
 #define OPTION_VAL_DREAMPOTATO_AR NULL
 #define OPTION_VAL_NONE_AR "لاشيء"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_AR NULL
@@ -1375,6 +1376,7 @@ struct retro_core_option_v2_definition option_defs_ar[] = {
       {
          { "VMU",      OPTION_VAL_VMU_AR },
          { "Purupuru", OPTION_VAL_PURUPURU_AR },
+         { "Microphone", OPTION_VAL_MICROPHONE_AR },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_AR },
          { "None",     OPTION_VAL_NONE_AR },
          { NULL, NULL },
@@ -1391,6 +1393,7 @@ struct retro_core_option_v2_definition option_defs_ar[] = {
       {
          { "VMU",      OPTION_VAL_VMU_AR },
          { "Purupuru", OPTION_VAL_PURUPURU_AR },
+         { "Microphone", OPTION_VAL_MICROPHONE_AR },
          { "None",     OPTION_VAL_NONE_AR },
          { NULL, NULL },
       },
@@ -1406,6 +1409,7 @@ struct retro_core_option_v2_definition option_defs_ar[] = {
       {
          { "VMU",      OPTION_VAL_VMU_AR },
          { "Purupuru", OPTION_VAL_PURUPURU_AR },
+         { "Microphone", OPTION_VAL_MICROPHONE_AR },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_AR },
          { "None",     OPTION_VAL_NONE_AR },
          { NULL, NULL },
@@ -1422,6 +1426,7 @@ struct retro_core_option_v2_definition option_defs_ar[] = {
       {
          { "VMU",      OPTION_VAL_VMU_AR },
          { "Purupuru", OPTION_VAL_PURUPURU_AR },
+         { "Microphone", OPTION_VAL_MICROPHONE_AR },
          { "None",     OPTION_VAL_NONE_AR },
          { NULL, NULL },
       },
@@ -1437,6 +1442,7 @@ struct retro_core_option_v2_definition option_defs_ar[] = {
       {
          { "VMU",      OPTION_VAL_VMU_AR },
          { "Purupuru", OPTION_VAL_PURUPURU_AR },
+         { "Microphone", OPTION_VAL_MICROPHONE_AR },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_AR },
          { "None",     OPTION_VAL_NONE_AR },
          { NULL, NULL },
@@ -1453,6 +1459,7 @@ struct retro_core_option_v2_definition option_defs_ar[] = {
       {
          { "VMU",      OPTION_VAL_VMU_AR },
          { "Purupuru", OPTION_VAL_PURUPURU_AR },
+         { "Microphone", OPTION_VAL_MICROPHONE_AR },
          { "None",     OPTION_VAL_NONE_AR },
          { NULL, NULL },
       },
@@ -1468,6 +1475,7 @@ struct retro_core_option_v2_definition option_defs_ar[] = {
       {
          { "VMU",      OPTION_VAL_VMU_AR },
          { "Purupuru", OPTION_VAL_PURUPURU_AR },
+         { "Microphone", OPTION_VAL_MICROPHONE_AR },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_AR },
          { "None",     OPTION_VAL_NONE_AR },
          { NULL, NULL },
@@ -1484,6 +1492,7 @@ struct retro_core_option_v2_definition option_defs_ar[] = {
       {
          { "VMU",      OPTION_VAL_VMU_AR },
          { "Purupuru", OPTION_VAL_PURUPURU_AR },
+         { "Microphone", OPTION_VAL_MICROPHONE_AR },
          { "None",     OPTION_VAL_NONE_AR },
          { NULL, NULL },
       },
@@ -2410,6 +2419,7 @@ struct retro_core_options_v2 options_ar = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_AST NULL
 #define OPTION_VAL_VMU_AST NULL
 #define OPTION_VAL_PURUPURU_AST NULL
+#define OPTION_VAL_MICROPHONE_AST NULL
 #define OPTION_VAL_DREAMPOTATO_AST NULL
 #define OPTION_VAL_NONE_AST NULL
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_AST NULL
@@ -3475,6 +3485,7 @@ struct retro_core_option_v2_definition option_defs_ast[] = {
       {
          { "VMU",      OPTION_VAL_VMU_AST },
          { "Purupuru", OPTION_VAL_PURUPURU_AST },
+         { "Microphone", OPTION_VAL_MICROPHONE_AST },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_AST },
          { "None",     OPTION_VAL_NONE_AST },
          { NULL, NULL },
@@ -3491,6 +3502,7 @@ struct retro_core_option_v2_definition option_defs_ast[] = {
       {
          { "VMU",      OPTION_VAL_VMU_AST },
          { "Purupuru", OPTION_VAL_PURUPURU_AST },
+         { "Microphone", OPTION_VAL_MICROPHONE_AST },
          { "None",     OPTION_VAL_NONE_AST },
          { NULL, NULL },
       },
@@ -3506,6 +3518,7 @@ struct retro_core_option_v2_definition option_defs_ast[] = {
       {
          { "VMU",      OPTION_VAL_VMU_AST },
          { "Purupuru", OPTION_VAL_PURUPURU_AST },
+         { "Microphone", OPTION_VAL_MICROPHONE_AST },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_AST },
          { "None",     OPTION_VAL_NONE_AST },
          { NULL, NULL },
@@ -3522,6 +3535,7 @@ struct retro_core_option_v2_definition option_defs_ast[] = {
       {
          { "VMU",      OPTION_VAL_VMU_AST },
          { "Purupuru", OPTION_VAL_PURUPURU_AST },
+         { "Microphone", OPTION_VAL_MICROPHONE_AST },
          { "None",     OPTION_VAL_NONE_AST },
          { NULL, NULL },
       },
@@ -3537,6 +3551,7 @@ struct retro_core_option_v2_definition option_defs_ast[] = {
       {
          { "VMU",      OPTION_VAL_VMU_AST },
          { "Purupuru", OPTION_VAL_PURUPURU_AST },
+         { "Microphone", OPTION_VAL_MICROPHONE_AST },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_AST },
          { "None",     OPTION_VAL_NONE_AST },
          { NULL, NULL },
@@ -3553,6 +3568,7 @@ struct retro_core_option_v2_definition option_defs_ast[] = {
       {
          { "VMU",      OPTION_VAL_VMU_AST },
          { "Purupuru", OPTION_VAL_PURUPURU_AST },
+         { "Microphone", OPTION_VAL_MICROPHONE_AST },
          { "None",     OPTION_VAL_NONE_AST },
          { NULL, NULL },
       },
@@ -3568,6 +3584,7 @@ struct retro_core_option_v2_definition option_defs_ast[] = {
       {
          { "VMU",      OPTION_VAL_VMU_AST },
          { "Purupuru", OPTION_VAL_PURUPURU_AST },
+         { "Microphone", OPTION_VAL_MICROPHONE_AST },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_AST },
          { "None",     OPTION_VAL_NONE_AST },
          { NULL, NULL },
@@ -3584,6 +3601,7 @@ struct retro_core_option_v2_definition option_defs_ast[] = {
       {
          { "VMU",      OPTION_VAL_VMU_AST },
          { "Purupuru", OPTION_VAL_PURUPURU_AST },
+         { "Microphone", OPTION_VAL_MICROPHONE_AST },
          { "None",     OPTION_VAL_NONE_AST },
          { NULL, NULL },
       },
@@ -4510,6 +4528,7 @@ struct retro_core_options_v2 options_ast = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_BE "Выбар прылады, уключанай у слот пашырэння A1 (порт А слот 1)."
 #define OPTION_VAL_VMU_BE NULL
 #define OPTION_VAL_PURUPURU_BE "Вібрапак"
+#define OPTION_VAL_MICROPHONE_BE NULL
 #define OPTION_VAL_DREAMPOTATO_BE NULL
 #define OPTION_VAL_NONE_BE "Няма"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_BE "Прылада ў слоце пашырэння A2"
@@ -5575,6 +5594,7 @@ struct retro_core_option_v2_definition option_defs_be[] = {
       {
          { "VMU",      OPTION_VAL_VMU_BE },
          { "Purupuru", OPTION_VAL_PURUPURU_BE },
+         { "Microphone", OPTION_VAL_MICROPHONE_BE },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_BE },
          { "None",     OPTION_VAL_NONE_BE },
          { NULL, NULL },
@@ -5591,6 +5611,7 @@ struct retro_core_option_v2_definition option_defs_be[] = {
       {
          { "VMU",      OPTION_VAL_VMU_BE },
          { "Purupuru", OPTION_VAL_PURUPURU_BE },
+         { "Microphone", OPTION_VAL_MICROPHONE_BE },
          { "None",     OPTION_VAL_NONE_BE },
          { NULL, NULL },
       },
@@ -5606,6 +5627,7 @@ struct retro_core_option_v2_definition option_defs_be[] = {
       {
          { "VMU",      OPTION_VAL_VMU_BE },
          { "Purupuru", OPTION_VAL_PURUPURU_BE },
+         { "Microphone", OPTION_VAL_MICROPHONE_BE },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_BE },
          { "None",     OPTION_VAL_NONE_BE },
          { NULL, NULL },
@@ -5622,6 +5644,7 @@ struct retro_core_option_v2_definition option_defs_be[] = {
       {
          { "VMU",      OPTION_VAL_VMU_BE },
          { "Purupuru", OPTION_VAL_PURUPURU_BE },
+         { "Microphone", OPTION_VAL_MICROPHONE_BE },
          { "None",     OPTION_VAL_NONE_BE },
          { NULL, NULL },
       },
@@ -5637,6 +5660,7 @@ struct retro_core_option_v2_definition option_defs_be[] = {
       {
          { "VMU",      OPTION_VAL_VMU_BE },
          { "Purupuru", OPTION_VAL_PURUPURU_BE },
+         { "Microphone", OPTION_VAL_MICROPHONE_BE },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_BE },
          { "None",     OPTION_VAL_NONE_BE },
          { NULL, NULL },
@@ -5653,6 +5677,7 @@ struct retro_core_option_v2_definition option_defs_be[] = {
       {
          { "VMU",      OPTION_VAL_VMU_BE },
          { "Purupuru", OPTION_VAL_PURUPURU_BE },
+         { "Microphone", OPTION_VAL_MICROPHONE_BE },
          { "None",     OPTION_VAL_NONE_BE },
          { NULL, NULL },
       },
@@ -5668,6 +5693,7 @@ struct retro_core_option_v2_definition option_defs_be[] = {
       {
          { "VMU",      OPTION_VAL_VMU_BE },
          { "Purupuru", OPTION_VAL_PURUPURU_BE },
+         { "Microphone", OPTION_VAL_MICROPHONE_BE },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_BE },
          { "None",     OPTION_VAL_NONE_BE },
          { NULL, NULL },
@@ -5684,6 +5710,7 @@ struct retro_core_option_v2_definition option_defs_be[] = {
       {
          { "VMU",      OPTION_VAL_VMU_BE },
          { "Purupuru", OPTION_VAL_PURUPURU_BE },
+         { "Microphone", OPTION_VAL_MICROPHONE_BE },
          { "None",     OPTION_VAL_NONE_BE },
          { NULL, NULL },
       },
@@ -6610,6 +6637,7 @@ struct retro_core_options_v2 options_be = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_BG NULL
 #define OPTION_VAL_VMU_BG NULL
 #define OPTION_VAL_PURUPURU_BG NULL
+#define OPTION_VAL_MICROPHONE_BG NULL
 #define OPTION_VAL_DREAMPOTATO_BG NULL
 #define OPTION_VAL_NONE_BG NULL
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_BG NULL
@@ -7675,6 +7703,7 @@ struct retro_core_option_v2_definition option_defs_bg[] = {
       {
          { "VMU",      OPTION_VAL_VMU_BG },
          { "Purupuru", OPTION_VAL_PURUPURU_BG },
+         { "Microphone", OPTION_VAL_MICROPHONE_BG },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_BG },
          { "None",     OPTION_VAL_NONE_BG },
          { NULL, NULL },
@@ -7691,6 +7720,7 @@ struct retro_core_option_v2_definition option_defs_bg[] = {
       {
          { "VMU",      OPTION_VAL_VMU_BG },
          { "Purupuru", OPTION_VAL_PURUPURU_BG },
+         { "Microphone", OPTION_VAL_MICROPHONE_BG },
          { "None",     OPTION_VAL_NONE_BG },
          { NULL, NULL },
       },
@@ -7706,6 +7736,7 @@ struct retro_core_option_v2_definition option_defs_bg[] = {
       {
          { "VMU",      OPTION_VAL_VMU_BG },
          { "Purupuru", OPTION_VAL_PURUPURU_BG },
+         { "Microphone", OPTION_VAL_MICROPHONE_BG },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_BG },
          { "None",     OPTION_VAL_NONE_BG },
          { NULL, NULL },
@@ -7722,6 +7753,7 @@ struct retro_core_option_v2_definition option_defs_bg[] = {
       {
          { "VMU",      OPTION_VAL_VMU_BG },
          { "Purupuru", OPTION_VAL_PURUPURU_BG },
+         { "Microphone", OPTION_VAL_MICROPHONE_BG },
          { "None",     OPTION_VAL_NONE_BG },
          { NULL, NULL },
       },
@@ -7737,6 +7769,7 @@ struct retro_core_option_v2_definition option_defs_bg[] = {
       {
          { "VMU",      OPTION_VAL_VMU_BG },
          { "Purupuru", OPTION_VAL_PURUPURU_BG },
+         { "Microphone", OPTION_VAL_MICROPHONE_BG },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_BG },
          { "None",     OPTION_VAL_NONE_BG },
          { NULL, NULL },
@@ -7753,6 +7786,7 @@ struct retro_core_option_v2_definition option_defs_bg[] = {
       {
          { "VMU",      OPTION_VAL_VMU_BG },
          { "Purupuru", OPTION_VAL_PURUPURU_BG },
+         { "Microphone", OPTION_VAL_MICROPHONE_BG },
          { "None",     OPTION_VAL_NONE_BG },
          { NULL, NULL },
       },
@@ -7768,6 +7802,7 @@ struct retro_core_option_v2_definition option_defs_bg[] = {
       {
          { "VMU",      OPTION_VAL_VMU_BG },
          { "Purupuru", OPTION_VAL_PURUPURU_BG },
+         { "Microphone", OPTION_VAL_MICROPHONE_BG },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_BG },
          { "None",     OPTION_VAL_NONE_BG },
          { NULL, NULL },
@@ -7784,6 +7819,7 @@ struct retro_core_option_v2_definition option_defs_bg[] = {
       {
          { "VMU",      OPTION_VAL_VMU_BG },
          { "Purupuru", OPTION_VAL_PURUPURU_BG },
+         { "Microphone", OPTION_VAL_MICROPHONE_BG },
          { "None",     OPTION_VAL_NONE_BG },
          { NULL, NULL },
       },
@@ -8710,6 +8746,7 @@ struct retro_core_options_v2 options_bg = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_CA "Selecciona el dispositiu connectat a la ranura d'expansió A1 (port A ranura 1)."
 #define OPTION_VAL_VMU_CA NULL
 #define OPTION_VAL_PURUPURU_CA "Pack de vibració"
+#define OPTION_VAL_MICROPHONE_CA NULL
 #define OPTION_VAL_DREAMPOTATO_CA NULL
 #define OPTION_VAL_NONE_CA "Cap"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_CA "Dispositiu en el port d'expansió A2"
@@ -9775,6 +9812,7 @@ struct retro_core_option_v2_definition option_defs_ca[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CA },
          { "Purupuru", OPTION_VAL_PURUPURU_CA },
+         { "Microphone", OPTION_VAL_MICROPHONE_CA },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_CA },
          { "None",     OPTION_VAL_NONE_CA },
          { NULL, NULL },
@@ -9791,6 +9829,7 @@ struct retro_core_option_v2_definition option_defs_ca[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CA },
          { "Purupuru", OPTION_VAL_PURUPURU_CA },
+         { "Microphone", OPTION_VAL_MICROPHONE_CA },
          { "None",     OPTION_VAL_NONE_CA },
          { NULL, NULL },
       },
@@ -9806,6 +9845,7 @@ struct retro_core_option_v2_definition option_defs_ca[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CA },
          { "Purupuru", OPTION_VAL_PURUPURU_CA },
+         { "Microphone", OPTION_VAL_MICROPHONE_CA },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_CA },
          { "None",     OPTION_VAL_NONE_CA },
          { NULL, NULL },
@@ -9822,6 +9862,7 @@ struct retro_core_option_v2_definition option_defs_ca[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CA },
          { "Purupuru", OPTION_VAL_PURUPURU_CA },
+         { "Microphone", OPTION_VAL_MICROPHONE_CA },
          { "None",     OPTION_VAL_NONE_CA },
          { NULL, NULL },
       },
@@ -9837,6 +9878,7 @@ struct retro_core_option_v2_definition option_defs_ca[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CA },
          { "Purupuru", OPTION_VAL_PURUPURU_CA },
+         { "Microphone", OPTION_VAL_MICROPHONE_CA },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_CA },
          { "None",     OPTION_VAL_NONE_CA },
          { NULL, NULL },
@@ -9853,6 +9895,7 @@ struct retro_core_option_v2_definition option_defs_ca[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CA },
          { "Purupuru", OPTION_VAL_PURUPURU_CA },
+         { "Microphone", OPTION_VAL_MICROPHONE_CA },
          { "None",     OPTION_VAL_NONE_CA },
          { NULL, NULL },
       },
@@ -9868,6 +9911,7 @@ struct retro_core_option_v2_definition option_defs_ca[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CA },
          { "Purupuru", OPTION_VAL_PURUPURU_CA },
+         { "Microphone", OPTION_VAL_MICROPHONE_CA },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_CA },
          { "None",     OPTION_VAL_NONE_CA },
          { NULL, NULL },
@@ -9884,6 +9928,7 @@ struct retro_core_option_v2_definition option_defs_ca[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CA },
          { "Purupuru", OPTION_VAL_PURUPURU_CA },
+         { "Microphone", OPTION_VAL_MICROPHONE_CA },
          { "None",     OPTION_VAL_NONE_CA },
          { NULL, NULL },
       },
@@ -10810,6 +10855,7 @@ struct retro_core_options_v2 options_ca = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_CHS "选择插入 A1 扩展插槽（端口 A 插槽 1）中的设备。"
 #define OPTION_VAL_VMU_CHS NULL
 #define OPTION_VAL_PURUPURU_CHS "震动包"
+#define OPTION_VAL_MICROPHONE_CHS NULL
 #define OPTION_VAL_DREAMPOTATO_CHS NULL
 #define OPTION_VAL_NONE_CHS "无"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_CHS "A2 扩展插槽设备"
@@ -11875,6 +11921,7 @@ struct retro_core_option_v2_definition option_defs_chs[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CHS },
          { "Purupuru", OPTION_VAL_PURUPURU_CHS },
+         { "Microphone", OPTION_VAL_MICROPHONE_CHS },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_CHS },
          { "None",     OPTION_VAL_NONE_CHS },
          { NULL, NULL },
@@ -11891,6 +11938,7 @@ struct retro_core_option_v2_definition option_defs_chs[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CHS },
          { "Purupuru", OPTION_VAL_PURUPURU_CHS },
+         { "Microphone", OPTION_VAL_MICROPHONE_CHS },
          { "None",     OPTION_VAL_NONE_CHS },
          { NULL, NULL },
       },
@@ -11906,6 +11954,7 @@ struct retro_core_option_v2_definition option_defs_chs[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CHS },
          { "Purupuru", OPTION_VAL_PURUPURU_CHS },
+         { "Microphone", OPTION_VAL_MICROPHONE_CHS },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_CHS },
          { "None",     OPTION_VAL_NONE_CHS },
          { NULL, NULL },
@@ -11922,6 +11971,7 @@ struct retro_core_option_v2_definition option_defs_chs[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CHS },
          { "Purupuru", OPTION_VAL_PURUPURU_CHS },
+         { "Microphone", OPTION_VAL_MICROPHONE_CHS },
          { "None",     OPTION_VAL_NONE_CHS },
          { NULL, NULL },
       },
@@ -11937,6 +11987,7 @@ struct retro_core_option_v2_definition option_defs_chs[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CHS },
          { "Purupuru", OPTION_VAL_PURUPURU_CHS },
+         { "Microphone", OPTION_VAL_MICROPHONE_CHS },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_CHS },
          { "None",     OPTION_VAL_NONE_CHS },
          { NULL, NULL },
@@ -11953,6 +12004,7 @@ struct retro_core_option_v2_definition option_defs_chs[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CHS },
          { "Purupuru", OPTION_VAL_PURUPURU_CHS },
+         { "Microphone", OPTION_VAL_MICROPHONE_CHS },
          { "None",     OPTION_VAL_NONE_CHS },
          { NULL, NULL },
       },
@@ -11968,6 +12020,7 @@ struct retro_core_option_v2_definition option_defs_chs[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CHS },
          { "Purupuru", OPTION_VAL_PURUPURU_CHS },
+         { "Microphone", OPTION_VAL_MICROPHONE_CHS },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_CHS },
          { "None",     OPTION_VAL_NONE_CHS },
          { NULL, NULL },
@@ -11984,6 +12037,7 @@ struct retro_core_option_v2_definition option_defs_chs[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CHS },
          { "Purupuru", OPTION_VAL_PURUPURU_CHS },
+         { "Microphone", OPTION_VAL_MICROPHONE_CHS },
          { "None",     OPTION_VAL_NONE_CHS },
          { NULL, NULL },
       },
@@ -12910,6 +12964,7 @@ struct retro_core_options_v2 options_chs = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_CHT NULL
 #define OPTION_VAL_VMU_CHT NULL
 #define OPTION_VAL_PURUPURU_CHT NULL
+#define OPTION_VAL_MICROPHONE_CHT NULL
 #define OPTION_VAL_DREAMPOTATO_CHT NULL
 #define OPTION_VAL_NONE_CHT "無"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_CHT NULL
@@ -13975,6 +14030,7 @@ struct retro_core_option_v2_definition option_defs_cht[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CHT },
          { "Purupuru", OPTION_VAL_PURUPURU_CHT },
+         { "Microphone", OPTION_VAL_MICROPHONE_CHT },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_CHT },
          { "None",     OPTION_VAL_NONE_CHT },
          { NULL, NULL },
@@ -13991,6 +14047,7 @@ struct retro_core_option_v2_definition option_defs_cht[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CHT },
          { "Purupuru", OPTION_VAL_PURUPURU_CHT },
+         { "Microphone", OPTION_VAL_MICROPHONE_CHT },
          { "None",     OPTION_VAL_NONE_CHT },
          { NULL, NULL },
       },
@@ -14006,6 +14063,7 @@ struct retro_core_option_v2_definition option_defs_cht[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CHT },
          { "Purupuru", OPTION_VAL_PURUPURU_CHT },
+         { "Microphone", OPTION_VAL_MICROPHONE_CHT },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_CHT },
          { "None",     OPTION_VAL_NONE_CHT },
          { NULL, NULL },
@@ -14022,6 +14080,7 @@ struct retro_core_option_v2_definition option_defs_cht[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CHT },
          { "Purupuru", OPTION_VAL_PURUPURU_CHT },
+         { "Microphone", OPTION_VAL_MICROPHONE_CHT },
          { "None",     OPTION_VAL_NONE_CHT },
          { NULL, NULL },
       },
@@ -14037,6 +14096,7 @@ struct retro_core_option_v2_definition option_defs_cht[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CHT },
          { "Purupuru", OPTION_VAL_PURUPURU_CHT },
+         { "Microphone", OPTION_VAL_MICROPHONE_CHT },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_CHT },
          { "None",     OPTION_VAL_NONE_CHT },
          { NULL, NULL },
@@ -14053,6 +14113,7 @@ struct retro_core_option_v2_definition option_defs_cht[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CHT },
          { "Purupuru", OPTION_VAL_PURUPURU_CHT },
+         { "Microphone", OPTION_VAL_MICROPHONE_CHT },
          { "None",     OPTION_VAL_NONE_CHT },
          { NULL, NULL },
       },
@@ -14068,6 +14129,7 @@ struct retro_core_option_v2_definition option_defs_cht[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CHT },
          { "Purupuru", OPTION_VAL_PURUPURU_CHT },
+         { "Microphone", OPTION_VAL_MICROPHONE_CHT },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_CHT },
          { "None",     OPTION_VAL_NONE_CHT },
          { NULL, NULL },
@@ -14084,6 +14146,7 @@ struct retro_core_option_v2_definition option_defs_cht[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CHT },
          { "Purupuru", OPTION_VAL_PURUPURU_CHT },
+         { "Microphone", OPTION_VAL_MICROPHONE_CHT },
          { "None",     OPTION_VAL_NONE_CHT },
          { NULL, NULL },
       },
@@ -15010,6 +15073,7 @@ struct retro_core_options_v2 options_cht = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_CS "Vyberte zařízení zapojené do rozšiřujícího slotu A1 (port A slot 1)."
 #define OPTION_VAL_VMU_CS NULL
 #define OPTION_VAL_PURUPURU_CS "Balíček vibrací"
+#define OPTION_VAL_MICROPHONE_CS NULL
 #define OPTION_VAL_DREAMPOTATO_CS NULL
 #define OPTION_VAL_NONE_CS "Žádné"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_CS "Zařízení v rozšiřujícím slotu A2"
@@ -16075,6 +16139,7 @@ struct retro_core_option_v2_definition option_defs_cs[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CS },
          { "Purupuru", OPTION_VAL_PURUPURU_CS },
+         { "Microphone", OPTION_VAL_MICROPHONE_CS },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_CS },
          { "None",     OPTION_VAL_NONE_CS },
          { NULL, NULL },
@@ -16091,6 +16156,7 @@ struct retro_core_option_v2_definition option_defs_cs[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CS },
          { "Purupuru", OPTION_VAL_PURUPURU_CS },
+         { "Microphone", OPTION_VAL_MICROPHONE_CS },
          { "None",     OPTION_VAL_NONE_CS },
          { NULL, NULL },
       },
@@ -16106,6 +16172,7 @@ struct retro_core_option_v2_definition option_defs_cs[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CS },
          { "Purupuru", OPTION_VAL_PURUPURU_CS },
+         { "Microphone", OPTION_VAL_MICROPHONE_CS },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_CS },
          { "None",     OPTION_VAL_NONE_CS },
          { NULL, NULL },
@@ -16122,6 +16189,7 @@ struct retro_core_option_v2_definition option_defs_cs[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CS },
          { "Purupuru", OPTION_VAL_PURUPURU_CS },
+         { "Microphone", OPTION_VAL_MICROPHONE_CS },
          { "None",     OPTION_VAL_NONE_CS },
          { NULL, NULL },
       },
@@ -16137,6 +16205,7 @@ struct retro_core_option_v2_definition option_defs_cs[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CS },
          { "Purupuru", OPTION_VAL_PURUPURU_CS },
+         { "Microphone", OPTION_VAL_MICROPHONE_CS },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_CS },
          { "None",     OPTION_VAL_NONE_CS },
          { NULL, NULL },
@@ -16153,6 +16222,7 @@ struct retro_core_option_v2_definition option_defs_cs[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CS },
          { "Purupuru", OPTION_VAL_PURUPURU_CS },
+         { "Microphone", OPTION_VAL_MICROPHONE_CS },
          { "None",     OPTION_VAL_NONE_CS },
          { NULL, NULL },
       },
@@ -16168,6 +16238,7 @@ struct retro_core_option_v2_definition option_defs_cs[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CS },
          { "Purupuru", OPTION_VAL_PURUPURU_CS },
+         { "Microphone", OPTION_VAL_MICROPHONE_CS },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_CS },
          { "None",     OPTION_VAL_NONE_CS },
          { NULL, NULL },
@@ -16184,6 +16255,7 @@ struct retro_core_option_v2_definition option_defs_cs[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CS },
          { "Purupuru", OPTION_VAL_PURUPURU_CS },
+         { "Microphone", OPTION_VAL_MICROPHONE_CS },
          { "None",     OPTION_VAL_NONE_CS },
          { NULL, NULL },
       },
@@ -17110,6 +17182,7 @@ struct retro_core_options_v2 options_cs = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_CY NULL
 #define OPTION_VAL_VMU_CY NULL
 #define OPTION_VAL_PURUPURU_CY NULL
+#define OPTION_VAL_MICROPHONE_CY NULL
 #define OPTION_VAL_DREAMPOTATO_CY NULL
 #define OPTION_VAL_NONE_CY "Dim"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_CY NULL
@@ -18175,6 +18248,7 @@ struct retro_core_option_v2_definition option_defs_cy[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CY },
          { "Purupuru", OPTION_VAL_PURUPURU_CY },
+         { "Microphone", OPTION_VAL_MICROPHONE_CY },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_CY },
          { "None",     OPTION_VAL_NONE_CY },
          { NULL, NULL },
@@ -18191,6 +18265,7 @@ struct retro_core_option_v2_definition option_defs_cy[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CY },
          { "Purupuru", OPTION_VAL_PURUPURU_CY },
+         { "Microphone", OPTION_VAL_MICROPHONE_CY },
          { "None",     OPTION_VAL_NONE_CY },
          { NULL, NULL },
       },
@@ -18206,6 +18281,7 @@ struct retro_core_option_v2_definition option_defs_cy[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CY },
          { "Purupuru", OPTION_VAL_PURUPURU_CY },
+         { "Microphone", OPTION_VAL_MICROPHONE_CY },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_CY },
          { "None",     OPTION_VAL_NONE_CY },
          { NULL, NULL },
@@ -18222,6 +18298,7 @@ struct retro_core_option_v2_definition option_defs_cy[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CY },
          { "Purupuru", OPTION_VAL_PURUPURU_CY },
+         { "Microphone", OPTION_VAL_MICROPHONE_CY },
          { "None",     OPTION_VAL_NONE_CY },
          { NULL, NULL },
       },
@@ -18237,6 +18314,7 @@ struct retro_core_option_v2_definition option_defs_cy[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CY },
          { "Purupuru", OPTION_VAL_PURUPURU_CY },
+         { "Microphone", OPTION_VAL_MICROPHONE_CY },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_CY },
          { "None",     OPTION_VAL_NONE_CY },
          { NULL, NULL },
@@ -18253,6 +18331,7 @@ struct retro_core_option_v2_definition option_defs_cy[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CY },
          { "Purupuru", OPTION_VAL_PURUPURU_CY },
+         { "Microphone", OPTION_VAL_MICROPHONE_CY },
          { "None",     OPTION_VAL_NONE_CY },
          { NULL, NULL },
       },
@@ -18268,6 +18347,7 @@ struct retro_core_option_v2_definition option_defs_cy[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CY },
          { "Purupuru", OPTION_VAL_PURUPURU_CY },
+         { "Microphone", OPTION_VAL_MICROPHONE_CY },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_CY },
          { "None",     OPTION_VAL_NONE_CY },
          { NULL, NULL },
@@ -18284,6 +18364,7 @@ struct retro_core_option_v2_definition option_defs_cy[] = {
       {
          { "VMU",      OPTION_VAL_VMU_CY },
          { "Purupuru", OPTION_VAL_PURUPURU_CY },
+         { "Microphone", OPTION_VAL_MICROPHONE_CY },
          { "None",     OPTION_VAL_NONE_CY },
          { NULL, NULL },
       },
@@ -19210,6 +19291,7 @@ struct retro_core_options_v2 options_cy = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_DA NULL
 #define OPTION_VAL_VMU_DA NULL
 #define OPTION_VAL_PURUPURU_DA NULL
+#define OPTION_VAL_MICROPHONE_DA NULL
 #define OPTION_VAL_DREAMPOTATO_DA NULL
 #define OPTION_VAL_NONE_DA NULL
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_DA NULL
@@ -20275,6 +20357,7 @@ struct retro_core_option_v2_definition option_defs_da[] = {
       {
          { "VMU",      OPTION_VAL_VMU_DA },
          { "Purupuru", OPTION_VAL_PURUPURU_DA },
+         { "Microphone", OPTION_VAL_MICROPHONE_DA },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_DA },
          { "None",     OPTION_VAL_NONE_DA },
          { NULL, NULL },
@@ -20291,6 +20374,7 @@ struct retro_core_option_v2_definition option_defs_da[] = {
       {
          { "VMU",      OPTION_VAL_VMU_DA },
          { "Purupuru", OPTION_VAL_PURUPURU_DA },
+         { "Microphone", OPTION_VAL_MICROPHONE_DA },
          { "None",     OPTION_VAL_NONE_DA },
          { NULL, NULL },
       },
@@ -20306,6 +20390,7 @@ struct retro_core_option_v2_definition option_defs_da[] = {
       {
          { "VMU",      OPTION_VAL_VMU_DA },
          { "Purupuru", OPTION_VAL_PURUPURU_DA },
+         { "Microphone", OPTION_VAL_MICROPHONE_DA },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_DA },
          { "None",     OPTION_VAL_NONE_DA },
          { NULL, NULL },
@@ -20322,6 +20407,7 @@ struct retro_core_option_v2_definition option_defs_da[] = {
       {
          { "VMU",      OPTION_VAL_VMU_DA },
          { "Purupuru", OPTION_VAL_PURUPURU_DA },
+         { "Microphone", OPTION_VAL_MICROPHONE_DA },
          { "None",     OPTION_VAL_NONE_DA },
          { NULL, NULL },
       },
@@ -20337,6 +20423,7 @@ struct retro_core_option_v2_definition option_defs_da[] = {
       {
          { "VMU",      OPTION_VAL_VMU_DA },
          { "Purupuru", OPTION_VAL_PURUPURU_DA },
+         { "Microphone", OPTION_VAL_MICROPHONE_DA },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_DA },
          { "None",     OPTION_VAL_NONE_DA },
          { NULL, NULL },
@@ -20353,6 +20440,7 @@ struct retro_core_option_v2_definition option_defs_da[] = {
       {
          { "VMU",      OPTION_VAL_VMU_DA },
          { "Purupuru", OPTION_VAL_PURUPURU_DA },
+         { "Microphone", OPTION_VAL_MICROPHONE_DA },
          { "None",     OPTION_VAL_NONE_DA },
          { NULL, NULL },
       },
@@ -20368,6 +20456,7 @@ struct retro_core_option_v2_definition option_defs_da[] = {
       {
          { "VMU",      OPTION_VAL_VMU_DA },
          { "Purupuru", OPTION_VAL_PURUPURU_DA },
+         { "Microphone", OPTION_VAL_MICROPHONE_DA },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_DA },
          { "None",     OPTION_VAL_NONE_DA },
          { NULL, NULL },
@@ -20384,6 +20473,7 @@ struct retro_core_option_v2_definition option_defs_da[] = {
       {
          { "VMU",      OPTION_VAL_VMU_DA },
          { "Purupuru", OPTION_VAL_PURUPURU_DA },
+         { "Microphone", OPTION_VAL_MICROPHONE_DA },
          { "None",     OPTION_VAL_NONE_DA },
          { NULL, NULL },
       },
@@ -21310,6 +21400,7 @@ struct retro_core_options_v2 options_da = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_DE "Das Gerät auswählen, das im Erweiterungsslot A1 angeschlossen ist (Port A Slot 1)."
 #define OPTION_VAL_VMU_DE NULL
 #define OPTION_VAL_PURUPURU_DE "Vibrationspaket"
+#define OPTION_VAL_MICROPHONE_DE NULL
 #define OPTION_VAL_DREAMPOTATO_DE NULL
 #define OPTION_VAL_NONE_DE "Nein"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_DE "Gerät im Erweiterungsslot A2"
@@ -22375,6 +22466,7 @@ struct retro_core_option_v2_definition option_defs_de[] = {
       {
          { "VMU",      OPTION_VAL_VMU_DE },
          { "Purupuru", OPTION_VAL_PURUPURU_DE },
+         { "Microphone", OPTION_VAL_MICROPHONE_DE },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_DE },
          { "None",     OPTION_VAL_NONE_DE },
          { NULL, NULL },
@@ -22391,6 +22483,7 @@ struct retro_core_option_v2_definition option_defs_de[] = {
       {
          { "VMU",      OPTION_VAL_VMU_DE },
          { "Purupuru", OPTION_VAL_PURUPURU_DE },
+         { "Microphone", OPTION_VAL_MICROPHONE_DE },
          { "None",     OPTION_VAL_NONE_DE },
          { NULL, NULL },
       },
@@ -22406,6 +22499,7 @@ struct retro_core_option_v2_definition option_defs_de[] = {
       {
          { "VMU",      OPTION_VAL_VMU_DE },
          { "Purupuru", OPTION_VAL_PURUPURU_DE },
+         { "Microphone", OPTION_VAL_MICROPHONE_DE },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_DE },
          { "None",     OPTION_VAL_NONE_DE },
          { NULL, NULL },
@@ -22422,6 +22516,7 @@ struct retro_core_option_v2_definition option_defs_de[] = {
       {
          { "VMU",      OPTION_VAL_VMU_DE },
          { "Purupuru", OPTION_VAL_PURUPURU_DE },
+         { "Microphone", OPTION_VAL_MICROPHONE_DE },
          { "None",     OPTION_VAL_NONE_DE },
          { NULL, NULL },
       },
@@ -22437,6 +22532,7 @@ struct retro_core_option_v2_definition option_defs_de[] = {
       {
          { "VMU",      OPTION_VAL_VMU_DE },
          { "Purupuru", OPTION_VAL_PURUPURU_DE },
+         { "Microphone", OPTION_VAL_MICROPHONE_DE },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_DE },
          { "None",     OPTION_VAL_NONE_DE },
          { NULL, NULL },
@@ -22453,6 +22549,7 @@ struct retro_core_option_v2_definition option_defs_de[] = {
       {
          { "VMU",      OPTION_VAL_VMU_DE },
          { "Purupuru", OPTION_VAL_PURUPURU_DE },
+         { "Microphone", OPTION_VAL_MICROPHONE_DE },
          { "None",     OPTION_VAL_NONE_DE },
          { NULL, NULL },
       },
@@ -22468,6 +22565,7 @@ struct retro_core_option_v2_definition option_defs_de[] = {
       {
          { "VMU",      OPTION_VAL_VMU_DE },
          { "Purupuru", OPTION_VAL_PURUPURU_DE },
+         { "Microphone", OPTION_VAL_MICROPHONE_DE },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_DE },
          { "None",     OPTION_VAL_NONE_DE },
          { NULL, NULL },
@@ -22484,6 +22582,7 @@ struct retro_core_option_v2_definition option_defs_de[] = {
       {
          { "VMU",      OPTION_VAL_VMU_DE },
          { "Purupuru", OPTION_VAL_PURUPURU_DE },
+         { "Microphone", OPTION_VAL_MICROPHONE_DE },
          { "None",     OPTION_VAL_NONE_DE },
          { NULL, NULL },
       },
@@ -23410,6 +23509,7 @@ struct retro_core_options_v2 options_de = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_EL NULL
 #define OPTION_VAL_VMU_EL NULL
 #define OPTION_VAL_PURUPURU_EL NULL
+#define OPTION_VAL_MICROPHONE_EL NULL
 #define OPTION_VAL_DREAMPOTATO_EL NULL
 #define OPTION_VAL_NONE_EL "Κανείς"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_EL NULL
@@ -24475,6 +24575,7 @@ struct retro_core_option_v2_definition option_defs_el[] = {
       {
          { "VMU",      OPTION_VAL_VMU_EL },
          { "Purupuru", OPTION_VAL_PURUPURU_EL },
+         { "Microphone", OPTION_VAL_MICROPHONE_EL },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_EL },
          { "None",     OPTION_VAL_NONE_EL },
          { NULL, NULL },
@@ -24491,6 +24592,7 @@ struct retro_core_option_v2_definition option_defs_el[] = {
       {
          { "VMU",      OPTION_VAL_VMU_EL },
          { "Purupuru", OPTION_VAL_PURUPURU_EL },
+         { "Microphone", OPTION_VAL_MICROPHONE_EL },
          { "None",     OPTION_VAL_NONE_EL },
          { NULL, NULL },
       },
@@ -24506,6 +24608,7 @@ struct retro_core_option_v2_definition option_defs_el[] = {
       {
          { "VMU",      OPTION_VAL_VMU_EL },
          { "Purupuru", OPTION_VAL_PURUPURU_EL },
+         { "Microphone", OPTION_VAL_MICROPHONE_EL },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_EL },
          { "None",     OPTION_VAL_NONE_EL },
          { NULL, NULL },
@@ -24522,6 +24625,7 @@ struct retro_core_option_v2_definition option_defs_el[] = {
       {
          { "VMU",      OPTION_VAL_VMU_EL },
          { "Purupuru", OPTION_VAL_PURUPURU_EL },
+         { "Microphone", OPTION_VAL_MICROPHONE_EL },
          { "None",     OPTION_VAL_NONE_EL },
          { NULL, NULL },
       },
@@ -24537,6 +24641,7 @@ struct retro_core_option_v2_definition option_defs_el[] = {
       {
          { "VMU",      OPTION_VAL_VMU_EL },
          { "Purupuru", OPTION_VAL_PURUPURU_EL },
+         { "Microphone", OPTION_VAL_MICROPHONE_EL },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_EL },
          { "None",     OPTION_VAL_NONE_EL },
          { NULL, NULL },
@@ -24553,6 +24658,7 @@ struct retro_core_option_v2_definition option_defs_el[] = {
       {
          { "VMU",      OPTION_VAL_VMU_EL },
          { "Purupuru", OPTION_VAL_PURUPURU_EL },
+         { "Microphone", OPTION_VAL_MICROPHONE_EL },
          { "None",     OPTION_VAL_NONE_EL },
          { NULL, NULL },
       },
@@ -24568,6 +24674,7 @@ struct retro_core_option_v2_definition option_defs_el[] = {
       {
          { "VMU",      OPTION_VAL_VMU_EL },
          { "Purupuru", OPTION_VAL_PURUPURU_EL },
+         { "Microphone", OPTION_VAL_MICROPHONE_EL },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_EL },
          { "None",     OPTION_VAL_NONE_EL },
          { NULL, NULL },
@@ -24584,6 +24691,7 @@ struct retro_core_option_v2_definition option_defs_el[] = {
       {
          { "VMU",      OPTION_VAL_VMU_EL },
          { "Purupuru", OPTION_VAL_PURUPURU_EL },
+         { "Microphone", OPTION_VAL_MICROPHONE_EL },
          { "None",     OPTION_VAL_NONE_EL },
          { NULL, NULL },
       },
@@ -25510,6 +25618,7 @@ struct retro_core_options_v2 options_el = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_EN NULL
 #define OPTION_VAL_VMU_EN NULL
 #define OPTION_VAL_PURUPURU_EN NULL
+#define OPTION_VAL_MICROPHONE_EN NULL
 #define OPTION_VAL_DREAMPOTATO_EN NULL
 #define OPTION_VAL_NONE_EN NULL
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_EN NULL
@@ -26575,6 +26684,7 @@ struct retro_core_option_v2_definition option_defs_en[] = {
       {
          { "VMU",      OPTION_VAL_VMU_EN },
          { "Purupuru", OPTION_VAL_PURUPURU_EN },
+         { "Microphone", OPTION_VAL_MICROPHONE_EN },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_EN },
          { "None",     OPTION_VAL_NONE_EN },
          { NULL, NULL },
@@ -26591,6 +26701,7 @@ struct retro_core_option_v2_definition option_defs_en[] = {
       {
          { "VMU",      OPTION_VAL_VMU_EN },
          { "Purupuru", OPTION_VAL_PURUPURU_EN },
+         { "Microphone", OPTION_VAL_MICROPHONE_EN },
          { "None",     OPTION_VAL_NONE_EN },
          { NULL, NULL },
       },
@@ -26606,6 +26717,7 @@ struct retro_core_option_v2_definition option_defs_en[] = {
       {
          { "VMU",      OPTION_VAL_VMU_EN },
          { "Purupuru", OPTION_VAL_PURUPURU_EN },
+         { "Microphone", OPTION_VAL_MICROPHONE_EN },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_EN },
          { "None",     OPTION_VAL_NONE_EN },
          { NULL, NULL },
@@ -26622,6 +26734,7 @@ struct retro_core_option_v2_definition option_defs_en[] = {
       {
          { "VMU",      OPTION_VAL_VMU_EN },
          { "Purupuru", OPTION_VAL_PURUPURU_EN },
+         { "Microphone", OPTION_VAL_MICROPHONE_EN },
          { "None",     OPTION_VAL_NONE_EN },
          { NULL, NULL },
       },
@@ -26637,6 +26750,7 @@ struct retro_core_option_v2_definition option_defs_en[] = {
       {
          { "VMU",      OPTION_VAL_VMU_EN },
          { "Purupuru", OPTION_VAL_PURUPURU_EN },
+         { "Microphone", OPTION_VAL_MICROPHONE_EN },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_EN },
          { "None",     OPTION_VAL_NONE_EN },
          { NULL, NULL },
@@ -26653,6 +26767,7 @@ struct retro_core_option_v2_definition option_defs_en[] = {
       {
          { "VMU",      OPTION_VAL_VMU_EN },
          { "Purupuru", OPTION_VAL_PURUPURU_EN },
+         { "Microphone", OPTION_VAL_MICROPHONE_EN },
          { "None",     OPTION_VAL_NONE_EN },
          { NULL, NULL },
       },
@@ -26668,6 +26783,7 @@ struct retro_core_option_v2_definition option_defs_en[] = {
       {
          { "VMU",      OPTION_VAL_VMU_EN },
          { "Purupuru", OPTION_VAL_PURUPURU_EN },
+         { "Microphone", OPTION_VAL_MICROPHONE_EN },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_EN },
          { "None",     OPTION_VAL_NONE_EN },
          { NULL, NULL },
@@ -26684,6 +26800,7 @@ struct retro_core_option_v2_definition option_defs_en[] = {
       {
          { "VMU",      OPTION_VAL_VMU_EN },
          { "Purupuru", OPTION_VAL_PURUPURU_EN },
+         { "Microphone", OPTION_VAL_MICROPHONE_EN },
          { "None",     OPTION_VAL_NONE_EN },
          { NULL, NULL },
       },
@@ -27610,6 +27727,7 @@ struct retro_core_options_v2 options_en = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_EO "Elekti la aparaton konektita en la aldonplata fendo A1 (konektejo A fendo 1)."
 #define OPTION_VAL_VMU_EO NULL
 #define OPTION_VAL_PURUPURU_EO NULL
+#define OPTION_VAL_MICROPHONE_EO NULL
 #define OPTION_VAL_DREAMPOTATO_EO NULL
 #define OPTION_VAL_NONE_EO "Neniu"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_EO "Aparato en aldonplata fendo A2"
@@ -28675,6 +28793,7 @@ struct retro_core_option_v2_definition option_defs_eo[] = {
       {
          { "VMU",      OPTION_VAL_VMU_EO },
          { "Purupuru", OPTION_VAL_PURUPURU_EO },
+         { "Microphone", OPTION_VAL_MICROPHONE_EO },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_EO },
          { "None",     OPTION_VAL_NONE_EO },
          { NULL, NULL },
@@ -28691,6 +28810,7 @@ struct retro_core_option_v2_definition option_defs_eo[] = {
       {
          { "VMU",      OPTION_VAL_VMU_EO },
          { "Purupuru", OPTION_VAL_PURUPURU_EO },
+         { "Microphone", OPTION_VAL_MICROPHONE_EO },
          { "None",     OPTION_VAL_NONE_EO },
          { NULL, NULL },
       },
@@ -28706,6 +28826,7 @@ struct retro_core_option_v2_definition option_defs_eo[] = {
       {
          { "VMU",      OPTION_VAL_VMU_EO },
          { "Purupuru", OPTION_VAL_PURUPURU_EO },
+         { "Microphone", OPTION_VAL_MICROPHONE_EO },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_EO },
          { "None",     OPTION_VAL_NONE_EO },
          { NULL, NULL },
@@ -28722,6 +28843,7 @@ struct retro_core_option_v2_definition option_defs_eo[] = {
       {
          { "VMU",      OPTION_VAL_VMU_EO },
          { "Purupuru", OPTION_VAL_PURUPURU_EO },
+         { "Microphone", OPTION_VAL_MICROPHONE_EO },
          { "None",     OPTION_VAL_NONE_EO },
          { NULL, NULL },
       },
@@ -28737,6 +28859,7 @@ struct retro_core_option_v2_definition option_defs_eo[] = {
       {
          { "VMU",      OPTION_VAL_VMU_EO },
          { "Purupuru", OPTION_VAL_PURUPURU_EO },
+         { "Microphone", OPTION_VAL_MICROPHONE_EO },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_EO },
          { "None",     OPTION_VAL_NONE_EO },
          { NULL, NULL },
@@ -28753,6 +28876,7 @@ struct retro_core_option_v2_definition option_defs_eo[] = {
       {
          { "VMU",      OPTION_VAL_VMU_EO },
          { "Purupuru", OPTION_VAL_PURUPURU_EO },
+         { "Microphone", OPTION_VAL_MICROPHONE_EO },
          { "None",     OPTION_VAL_NONE_EO },
          { NULL, NULL },
       },
@@ -28768,6 +28892,7 @@ struct retro_core_option_v2_definition option_defs_eo[] = {
       {
          { "VMU",      OPTION_VAL_VMU_EO },
          { "Purupuru", OPTION_VAL_PURUPURU_EO },
+         { "Microphone", OPTION_VAL_MICROPHONE_EO },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_EO },
          { "None",     OPTION_VAL_NONE_EO },
          { NULL, NULL },
@@ -28784,6 +28909,7 @@ struct retro_core_option_v2_definition option_defs_eo[] = {
       {
          { "VMU",      OPTION_VAL_VMU_EO },
          { "Purupuru", OPTION_VAL_PURUPURU_EO },
+         { "Microphone", OPTION_VAL_MICROPHONE_EO },
          { "None",     OPTION_VAL_NONE_EO },
          { NULL, NULL },
       },
@@ -29710,6 +29836,7 @@ struct retro_core_options_v2 options_eo = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_ES "Selecciona el dispositivo conectado al puerto de expansión A1 (puerto de mando A, ranura 1)."
 #define OPTION_VAL_VMU_ES "Visual Memory (VMU)"
 #define OPTION_VAL_PURUPURU_ES "Vibration Pack (vibración)"
+#define OPTION_VAL_MICROPHONE_ES NULL
 #define OPTION_VAL_DREAMPOTATO_ES NULL
 #define OPTION_VAL_NONE_ES "No compartir"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_ES "Dispositivo del puerto de expansión A2"
@@ -30775,6 +30902,7 @@ struct retro_core_option_v2_definition option_defs_es[] = {
       {
          { "VMU",      OPTION_VAL_VMU_ES },
          { "Purupuru", OPTION_VAL_PURUPURU_ES },
+         { "Microphone", OPTION_VAL_MICROPHONE_ES },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_ES },
          { "None",     OPTION_VAL_NONE_ES },
          { NULL, NULL },
@@ -30791,6 +30919,7 @@ struct retro_core_option_v2_definition option_defs_es[] = {
       {
          { "VMU",      OPTION_VAL_VMU_ES },
          { "Purupuru", OPTION_VAL_PURUPURU_ES },
+         { "Microphone", OPTION_VAL_MICROPHONE_ES },
          { "None",     OPTION_VAL_NONE_ES },
          { NULL, NULL },
       },
@@ -30806,6 +30935,7 @@ struct retro_core_option_v2_definition option_defs_es[] = {
       {
          { "VMU",      OPTION_VAL_VMU_ES },
          { "Purupuru", OPTION_VAL_PURUPURU_ES },
+         { "Microphone", OPTION_VAL_MICROPHONE_ES },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_ES },
          { "None",     OPTION_VAL_NONE_ES },
          { NULL, NULL },
@@ -30822,6 +30952,7 @@ struct retro_core_option_v2_definition option_defs_es[] = {
       {
          { "VMU",      OPTION_VAL_VMU_ES },
          { "Purupuru", OPTION_VAL_PURUPURU_ES },
+         { "Microphone", OPTION_VAL_MICROPHONE_ES },
          { "None",     OPTION_VAL_NONE_ES },
          { NULL, NULL },
       },
@@ -30837,6 +30968,7 @@ struct retro_core_option_v2_definition option_defs_es[] = {
       {
          { "VMU",      OPTION_VAL_VMU_ES },
          { "Purupuru", OPTION_VAL_PURUPURU_ES },
+         { "Microphone", OPTION_VAL_MICROPHONE_ES },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_ES },
          { "None",     OPTION_VAL_NONE_ES },
          { NULL, NULL },
@@ -30853,6 +30985,7 @@ struct retro_core_option_v2_definition option_defs_es[] = {
       {
          { "VMU",      OPTION_VAL_VMU_ES },
          { "Purupuru", OPTION_VAL_PURUPURU_ES },
+         { "Microphone", OPTION_VAL_MICROPHONE_ES },
          { "None",     OPTION_VAL_NONE_ES },
          { NULL, NULL },
       },
@@ -30868,6 +31001,7 @@ struct retro_core_option_v2_definition option_defs_es[] = {
       {
          { "VMU",      OPTION_VAL_VMU_ES },
          { "Purupuru", OPTION_VAL_PURUPURU_ES },
+         { "Microphone", OPTION_VAL_MICROPHONE_ES },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_ES },
          { "None",     OPTION_VAL_NONE_ES },
          { NULL, NULL },
@@ -30884,6 +31018,7 @@ struct retro_core_option_v2_definition option_defs_es[] = {
       {
          { "VMU",      OPTION_VAL_VMU_ES },
          { "Purupuru", OPTION_VAL_PURUPURU_ES },
+         { "Microphone", OPTION_VAL_MICROPHONE_ES },
          { "None",     OPTION_VAL_NONE_ES },
          { NULL, NULL },
       },
@@ -31810,6 +31945,7 @@ struct retro_core_options_v2 options_es = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_FA NULL
 #define OPTION_VAL_VMU_FA NULL
 #define OPTION_VAL_PURUPURU_FA NULL
+#define OPTION_VAL_MICROPHONE_FA NULL
 #define OPTION_VAL_DREAMPOTATO_FA NULL
 #define OPTION_VAL_NONE_FA "هیچکدام"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_FA NULL
@@ -32875,6 +33011,7 @@ struct retro_core_option_v2_definition option_defs_fa[] = {
       {
          { "VMU",      OPTION_VAL_VMU_FA },
          { "Purupuru", OPTION_VAL_PURUPURU_FA },
+         { "Microphone", OPTION_VAL_MICROPHONE_FA },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_FA },
          { "None",     OPTION_VAL_NONE_FA },
          { NULL, NULL },
@@ -32891,6 +33028,7 @@ struct retro_core_option_v2_definition option_defs_fa[] = {
       {
          { "VMU",      OPTION_VAL_VMU_FA },
          { "Purupuru", OPTION_VAL_PURUPURU_FA },
+         { "Microphone", OPTION_VAL_MICROPHONE_FA },
          { "None",     OPTION_VAL_NONE_FA },
          { NULL, NULL },
       },
@@ -32906,6 +33044,7 @@ struct retro_core_option_v2_definition option_defs_fa[] = {
       {
          { "VMU",      OPTION_VAL_VMU_FA },
          { "Purupuru", OPTION_VAL_PURUPURU_FA },
+         { "Microphone", OPTION_VAL_MICROPHONE_FA },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_FA },
          { "None",     OPTION_VAL_NONE_FA },
          { NULL, NULL },
@@ -32922,6 +33061,7 @@ struct retro_core_option_v2_definition option_defs_fa[] = {
       {
          { "VMU",      OPTION_VAL_VMU_FA },
          { "Purupuru", OPTION_VAL_PURUPURU_FA },
+         { "Microphone", OPTION_VAL_MICROPHONE_FA },
          { "None",     OPTION_VAL_NONE_FA },
          { NULL, NULL },
       },
@@ -32937,6 +33077,7 @@ struct retro_core_option_v2_definition option_defs_fa[] = {
       {
          { "VMU",      OPTION_VAL_VMU_FA },
          { "Purupuru", OPTION_VAL_PURUPURU_FA },
+         { "Microphone", OPTION_VAL_MICROPHONE_FA },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_FA },
          { "None",     OPTION_VAL_NONE_FA },
          { NULL, NULL },
@@ -32953,6 +33094,7 @@ struct retro_core_option_v2_definition option_defs_fa[] = {
       {
          { "VMU",      OPTION_VAL_VMU_FA },
          { "Purupuru", OPTION_VAL_PURUPURU_FA },
+         { "Microphone", OPTION_VAL_MICROPHONE_FA },
          { "None",     OPTION_VAL_NONE_FA },
          { NULL, NULL },
       },
@@ -32968,6 +33110,7 @@ struct retro_core_option_v2_definition option_defs_fa[] = {
       {
          { "VMU",      OPTION_VAL_VMU_FA },
          { "Purupuru", OPTION_VAL_PURUPURU_FA },
+         { "Microphone", OPTION_VAL_MICROPHONE_FA },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_FA },
          { "None",     OPTION_VAL_NONE_FA },
          { NULL, NULL },
@@ -32984,6 +33127,7 @@ struct retro_core_option_v2_definition option_defs_fa[] = {
       {
          { "VMU",      OPTION_VAL_VMU_FA },
          { "Purupuru", OPTION_VAL_PURUPURU_FA },
+         { "Microphone", OPTION_VAL_MICROPHONE_FA },
          { "None",     OPTION_VAL_NONE_FA },
          { NULL, NULL },
       },
@@ -33910,6 +34054,7 @@ struct retro_core_options_v2 options_fa = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_FI NULL
 #define OPTION_VAL_VMU_FI NULL
 #define OPTION_VAL_PURUPURU_FI NULL
+#define OPTION_VAL_MICROPHONE_FI NULL
 #define OPTION_VAL_DREAMPOTATO_FI NULL
 #define OPTION_VAL_NONE_FI "Ei mitään"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_FI NULL
@@ -34975,6 +35120,7 @@ struct retro_core_option_v2_definition option_defs_fi[] = {
       {
          { "VMU",      OPTION_VAL_VMU_FI },
          { "Purupuru", OPTION_VAL_PURUPURU_FI },
+         { "Microphone", OPTION_VAL_MICROPHONE_FI },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_FI },
          { "None",     OPTION_VAL_NONE_FI },
          { NULL, NULL },
@@ -34991,6 +35137,7 @@ struct retro_core_option_v2_definition option_defs_fi[] = {
       {
          { "VMU",      OPTION_VAL_VMU_FI },
          { "Purupuru", OPTION_VAL_PURUPURU_FI },
+         { "Microphone", OPTION_VAL_MICROPHONE_FI },
          { "None",     OPTION_VAL_NONE_FI },
          { NULL, NULL },
       },
@@ -35006,6 +35153,7 @@ struct retro_core_option_v2_definition option_defs_fi[] = {
       {
          { "VMU",      OPTION_VAL_VMU_FI },
          { "Purupuru", OPTION_VAL_PURUPURU_FI },
+         { "Microphone", OPTION_VAL_MICROPHONE_FI },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_FI },
          { "None",     OPTION_VAL_NONE_FI },
          { NULL, NULL },
@@ -35022,6 +35170,7 @@ struct retro_core_option_v2_definition option_defs_fi[] = {
       {
          { "VMU",      OPTION_VAL_VMU_FI },
          { "Purupuru", OPTION_VAL_PURUPURU_FI },
+         { "Microphone", OPTION_VAL_MICROPHONE_FI },
          { "None",     OPTION_VAL_NONE_FI },
          { NULL, NULL },
       },
@@ -35037,6 +35186,7 @@ struct retro_core_option_v2_definition option_defs_fi[] = {
       {
          { "VMU",      OPTION_VAL_VMU_FI },
          { "Purupuru", OPTION_VAL_PURUPURU_FI },
+         { "Microphone", OPTION_VAL_MICROPHONE_FI },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_FI },
          { "None",     OPTION_VAL_NONE_FI },
          { NULL, NULL },
@@ -35053,6 +35203,7 @@ struct retro_core_option_v2_definition option_defs_fi[] = {
       {
          { "VMU",      OPTION_VAL_VMU_FI },
          { "Purupuru", OPTION_VAL_PURUPURU_FI },
+         { "Microphone", OPTION_VAL_MICROPHONE_FI },
          { "None",     OPTION_VAL_NONE_FI },
          { NULL, NULL },
       },
@@ -35068,6 +35219,7 @@ struct retro_core_option_v2_definition option_defs_fi[] = {
       {
          { "VMU",      OPTION_VAL_VMU_FI },
          { "Purupuru", OPTION_VAL_PURUPURU_FI },
+         { "Microphone", OPTION_VAL_MICROPHONE_FI },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_FI },
          { "None",     OPTION_VAL_NONE_FI },
          { NULL, NULL },
@@ -35084,6 +35236,7 @@ struct retro_core_option_v2_definition option_defs_fi[] = {
       {
          { "VMU",      OPTION_VAL_VMU_FI },
          { "Purupuru", OPTION_VAL_PURUPURU_FI },
+         { "Microphone", OPTION_VAL_MICROPHONE_FI },
          { "None",     OPTION_VAL_NONE_FI },
          { NULL, NULL },
       },
@@ -36010,6 +36163,7 @@ struct retro_core_options_v2 options_fi = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_FR "Sélectionner le périphérique branché dans le port d'extension A1 (port A emplacement 1)."
 #define OPTION_VAL_VMU_FR NULL
 #define OPTION_VAL_PURUPURU_FR NULL
+#define OPTION_VAL_MICROPHONE_FR NULL
 #define OPTION_VAL_DREAMPOTATO_FR NULL
 #define OPTION_VAL_NONE_FR "Ne pas partager"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_FR "Périphérique dans le port d'extension A2"
@@ -37075,6 +37229,7 @@ struct retro_core_option_v2_definition option_defs_fr[] = {
       {
          { "VMU",      OPTION_VAL_VMU_FR },
          { "Purupuru", OPTION_VAL_PURUPURU_FR },
+         { "Microphone", OPTION_VAL_MICROPHONE_FR },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_FR },
          { "None",     OPTION_VAL_NONE_FR },
          { NULL, NULL },
@@ -37091,6 +37246,7 @@ struct retro_core_option_v2_definition option_defs_fr[] = {
       {
          { "VMU",      OPTION_VAL_VMU_FR },
          { "Purupuru", OPTION_VAL_PURUPURU_FR },
+         { "Microphone", OPTION_VAL_MICROPHONE_FR },
          { "None",     OPTION_VAL_NONE_FR },
          { NULL, NULL },
       },
@@ -37106,6 +37262,7 @@ struct retro_core_option_v2_definition option_defs_fr[] = {
       {
          { "VMU",      OPTION_VAL_VMU_FR },
          { "Purupuru", OPTION_VAL_PURUPURU_FR },
+         { "Microphone", OPTION_VAL_MICROPHONE_FR },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_FR },
          { "None",     OPTION_VAL_NONE_FR },
          { NULL, NULL },
@@ -37122,6 +37279,7 @@ struct retro_core_option_v2_definition option_defs_fr[] = {
       {
          { "VMU",      OPTION_VAL_VMU_FR },
          { "Purupuru", OPTION_VAL_PURUPURU_FR },
+         { "Microphone", OPTION_VAL_MICROPHONE_FR },
          { "None",     OPTION_VAL_NONE_FR },
          { NULL, NULL },
       },
@@ -37137,6 +37295,7 @@ struct retro_core_option_v2_definition option_defs_fr[] = {
       {
          { "VMU",      OPTION_VAL_VMU_FR },
          { "Purupuru", OPTION_VAL_PURUPURU_FR },
+         { "Microphone", OPTION_VAL_MICROPHONE_FR },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_FR },
          { "None",     OPTION_VAL_NONE_FR },
          { NULL, NULL },
@@ -37153,6 +37312,7 @@ struct retro_core_option_v2_definition option_defs_fr[] = {
       {
          { "VMU",      OPTION_VAL_VMU_FR },
          { "Purupuru", OPTION_VAL_PURUPURU_FR },
+         { "Microphone", OPTION_VAL_MICROPHONE_FR },
          { "None",     OPTION_VAL_NONE_FR },
          { NULL, NULL },
       },
@@ -37168,6 +37328,7 @@ struct retro_core_option_v2_definition option_defs_fr[] = {
       {
          { "VMU",      OPTION_VAL_VMU_FR },
          { "Purupuru", OPTION_VAL_PURUPURU_FR },
+         { "Microphone", OPTION_VAL_MICROPHONE_FR },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_FR },
          { "None",     OPTION_VAL_NONE_FR },
          { NULL, NULL },
@@ -37184,6 +37345,7 @@ struct retro_core_option_v2_definition option_defs_fr[] = {
       {
          { "VMU",      OPTION_VAL_VMU_FR },
          { "Purupuru", OPTION_VAL_PURUPURU_FR },
+         { "Microphone", OPTION_VAL_MICROPHONE_FR },
          { "None",     OPTION_VAL_NONE_FR },
          { NULL, NULL },
       },
@@ -38110,6 +38272,7 @@ struct retro_core_options_v2 options_fr = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_GA "Roghnaigh an gléas atá plugáilte isteach sa sliotán leathnúcháin A1 (port A sliotán 1)."
 #define OPTION_VAL_VMU_GA NULL
 #define OPTION_VAL_PURUPURU_GA "Pacáiste Creathadh"
+#define OPTION_VAL_MICROPHONE_GA NULL
 #define OPTION_VAL_DREAMPOTATO_GA NULL
 #define OPTION_VAL_NONE_GA "Dada"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_GA "Gléas i Sliotán Leathnaithe A2"
@@ -39175,6 +39338,7 @@ struct retro_core_option_v2_definition option_defs_ga[] = {
       {
          { "VMU",      OPTION_VAL_VMU_GA },
          { "Purupuru", OPTION_VAL_PURUPURU_GA },
+         { "Microphone", OPTION_VAL_MICROPHONE_GA },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_GA },
          { "None",     OPTION_VAL_NONE_GA },
          { NULL, NULL },
@@ -39191,6 +39355,7 @@ struct retro_core_option_v2_definition option_defs_ga[] = {
       {
          { "VMU",      OPTION_VAL_VMU_GA },
          { "Purupuru", OPTION_VAL_PURUPURU_GA },
+         { "Microphone", OPTION_VAL_MICROPHONE_GA },
          { "None",     OPTION_VAL_NONE_GA },
          { NULL, NULL },
       },
@@ -39206,6 +39371,7 @@ struct retro_core_option_v2_definition option_defs_ga[] = {
       {
          { "VMU",      OPTION_VAL_VMU_GA },
          { "Purupuru", OPTION_VAL_PURUPURU_GA },
+         { "Microphone", OPTION_VAL_MICROPHONE_GA },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_GA },
          { "None",     OPTION_VAL_NONE_GA },
          { NULL, NULL },
@@ -39222,6 +39388,7 @@ struct retro_core_option_v2_definition option_defs_ga[] = {
       {
          { "VMU",      OPTION_VAL_VMU_GA },
          { "Purupuru", OPTION_VAL_PURUPURU_GA },
+         { "Microphone", OPTION_VAL_MICROPHONE_GA },
          { "None",     OPTION_VAL_NONE_GA },
          { NULL, NULL },
       },
@@ -39237,6 +39404,7 @@ struct retro_core_option_v2_definition option_defs_ga[] = {
       {
          { "VMU",      OPTION_VAL_VMU_GA },
          { "Purupuru", OPTION_VAL_PURUPURU_GA },
+         { "Microphone", OPTION_VAL_MICROPHONE_GA },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_GA },
          { "None",     OPTION_VAL_NONE_GA },
          { NULL, NULL },
@@ -39253,6 +39421,7 @@ struct retro_core_option_v2_definition option_defs_ga[] = {
       {
          { "VMU",      OPTION_VAL_VMU_GA },
          { "Purupuru", OPTION_VAL_PURUPURU_GA },
+         { "Microphone", OPTION_VAL_MICROPHONE_GA },
          { "None",     OPTION_VAL_NONE_GA },
          { NULL, NULL },
       },
@@ -39268,6 +39437,7 @@ struct retro_core_option_v2_definition option_defs_ga[] = {
       {
          { "VMU",      OPTION_VAL_VMU_GA },
          { "Purupuru", OPTION_VAL_PURUPURU_GA },
+         { "Microphone", OPTION_VAL_MICROPHONE_GA },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_GA },
          { "None",     OPTION_VAL_NONE_GA },
          { NULL, NULL },
@@ -39284,6 +39454,7 @@ struct retro_core_option_v2_definition option_defs_ga[] = {
       {
          { "VMU",      OPTION_VAL_VMU_GA },
          { "Purupuru", OPTION_VAL_PURUPURU_GA },
+         { "Microphone", OPTION_VAL_MICROPHONE_GA },
          { "None",     OPTION_VAL_NONE_GA },
          { NULL, NULL },
       },
@@ -40210,6 +40381,7 @@ struct retro_core_options_v2 options_ga = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_GL "Seleccione o dispositivo conectado a rañura de expansión A1 (porto A rañura 1)."
 #define OPTION_VAL_VMU_GL NULL
 #define OPTION_VAL_PURUPURU_GL "Paquete de vibracións"
+#define OPTION_VAL_MICROPHONE_GL NULL
 #define OPTION_VAL_DREAMPOTATO_GL NULL
 #define OPTION_VAL_NONE_GL "Ningún"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_GL "Dispositivo na rañura de expansión A2"
@@ -41275,6 +41447,7 @@ struct retro_core_option_v2_definition option_defs_gl[] = {
       {
          { "VMU",      OPTION_VAL_VMU_GL },
          { "Purupuru", OPTION_VAL_PURUPURU_GL },
+         { "Microphone", OPTION_VAL_MICROPHONE_GL },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_GL },
          { "None",     OPTION_VAL_NONE_GL },
          { NULL, NULL },
@@ -41291,6 +41464,7 @@ struct retro_core_option_v2_definition option_defs_gl[] = {
       {
          { "VMU",      OPTION_VAL_VMU_GL },
          { "Purupuru", OPTION_VAL_PURUPURU_GL },
+         { "Microphone", OPTION_VAL_MICROPHONE_GL },
          { "None",     OPTION_VAL_NONE_GL },
          { NULL, NULL },
       },
@@ -41306,6 +41480,7 @@ struct retro_core_option_v2_definition option_defs_gl[] = {
       {
          { "VMU",      OPTION_VAL_VMU_GL },
          { "Purupuru", OPTION_VAL_PURUPURU_GL },
+         { "Microphone", OPTION_VAL_MICROPHONE_GL },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_GL },
          { "None",     OPTION_VAL_NONE_GL },
          { NULL, NULL },
@@ -41322,6 +41497,7 @@ struct retro_core_option_v2_definition option_defs_gl[] = {
       {
          { "VMU",      OPTION_VAL_VMU_GL },
          { "Purupuru", OPTION_VAL_PURUPURU_GL },
+         { "Microphone", OPTION_VAL_MICROPHONE_GL },
          { "None",     OPTION_VAL_NONE_GL },
          { NULL, NULL },
       },
@@ -41337,6 +41513,7 @@ struct retro_core_option_v2_definition option_defs_gl[] = {
       {
          { "VMU",      OPTION_VAL_VMU_GL },
          { "Purupuru", OPTION_VAL_PURUPURU_GL },
+         { "Microphone", OPTION_VAL_MICROPHONE_GL },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_GL },
          { "None",     OPTION_VAL_NONE_GL },
          { NULL, NULL },
@@ -41353,6 +41530,7 @@ struct retro_core_option_v2_definition option_defs_gl[] = {
       {
          { "VMU",      OPTION_VAL_VMU_GL },
          { "Purupuru", OPTION_VAL_PURUPURU_GL },
+         { "Microphone", OPTION_VAL_MICROPHONE_GL },
          { "None",     OPTION_VAL_NONE_GL },
          { NULL, NULL },
       },
@@ -41368,6 +41546,7 @@ struct retro_core_option_v2_definition option_defs_gl[] = {
       {
          { "VMU",      OPTION_VAL_VMU_GL },
          { "Purupuru", OPTION_VAL_PURUPURU_GL },
+         { "Microphone", OPTION_VAL_MICROPHONE_GL },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_GL },
          { "None",     OPTION_VAL_NONE_GL },
          { NULL, NULL },
@@ -41384,6 +41563,7 @@ struct retro_core_option_v2_definition option_defs_gl[] = {
       {
          { "VMU",      OPTION_VAL_VMU_GL },
          { "Purupuru", OPTION_VAL_PURUPURU_GL },
+         { "Microphone", OPTION_VAL_MICROPHONE_GL },
          { "None",     OPTION_VAL_NONE_GL },
          { NULL, NULL },
       },
@@ -42310,6 +42490,7 @@ struct retro_core_options_v2 options_gl = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_HE NULL
 #define OPTION_VAL_VMU_HE NULL
 #define OPTION_VAL_PURUPURU_HE NULL
+#define OPTION_VAL_MICROPHONE_HE NULL
 #define OPTION_VAL_DREAMPOTATO_HE NULL
 #define OPTION_VAL_NONE_HE NULL
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_HE NULL
@@ -43375,6 +43556,7 @@ struct retro_core_option_v2_definition option_defs_he[] = {
       {
          { "VMU",      OPTION_VAL_VMU_HE },
          { "Purupuru", OPTION_VAL_PURUPURU_HE },
+         { "Microphone", OPTION_VAL_MICROPHONE_HE },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_HE },
          { "None",     OPTION_VAL_NONE_HE },
          { NULL, NULL },
@@ -43391,6 +43573,7 @@ struct retro_core_option_v2_definition option_defs_he[] = {
       {
          { "VMU",      OPTION_VAL_VMU_HE },
          { "Purupuru", OPTION_VAL_PURUPURU_HE },
+         { "Microphone", OPTION_VAL_MICROPHONE_HE },
          { "None",     OPTION_VAL_NONE_HE },
          { NULL, NULL },
       },
@@ -43406,6 +43589,7 @@ struct retro_core_option_v2_definition option_defs_he[] = {
       {
          { "VMU",      OPTION_VAL_VMU_HE },
          { "Purupuru", OPTION_VAL_PURUPURU_HE },
+         { "Microphone", OPTION_VAL_MICROPHONE_HE },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_HE },
          { "None",     OPTION_VAL_NONE_HE },
          { NULL, NULL },
@@ -43422,6 +43606,7 @@ struct retro_core_option_v2_definition option_defs_he[] = {
       {
          { "VMU",      OPTION_VAL_VMU_HE },
          { "Purupuru", OPTION_VAL_PURUPURU_HE },
+         { "Microphone", OPTION_VAL_MICROPHONE_HE },
          { "None",     OPTION_VAL_NONE_HE },
          { NULL, NULL },
       },
@@ -43437,6 +43622,7 @@ struct retro_core_option_v2_definition option_defs_he[] = {
       {
          { "VMU",      OPTION_VAL_VMU_HE },
          { "Purupuru", OPTION_VAL_PURUPURU_HE },
+         { "Microphone", OPTION_VAL_MICROPHONE_HE },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_HE },
          { "None",     OPTION_VAL_NONE_HE },
          { NULL, NULL },
@@ -43453,6 +43639,7 @@ struct retro_core_option_v2_definition option_defs_he[] = {
       {
          { "VMU",      OPTION_VAL_VMU_HE },
          { "Purupuru", OPTION_VAL_PURUPURU_HE },
+         { "Microphone", OPTION_VAL_MICROPHONE_HE },
          { "None",     OPTION_VAL_NONE_HE },
          { NULL, NULL },
       },
@@ -43468,6 +43655,7 @@ struct retro_core_option_v2_definition option_defs_he[] = {
       {
          { "VMU",      OPTION_VAL_VMU_HE },
          { "Purupuru", OPTION_VAL_PURUPURU_HE },
+         { "Microphone", OPTION_VAL_MICROPHONE_HE },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_HE },
          { "None",     OPTION_VAL_NONE_HE },
          { NULL, NULL },
@@ -43484,6 +43672,7 @@ struct retro_core_option_v2_definition option_defs_he[] = {
       {
          { "VMU",      OPTION_VAL_VMU_HE },
          { "Purupuru", OPTION_VAL_PURUPURU_HE },
+         { "Microphone", OPTION_VAL_MICROPHONE_HE },
          { "None",     OPTION_VAL_NONE_HE },
          { NULL, NULL },
       },
@@ -44410,6 +44599,7 @@ struct retro_core_options_v2 options_he = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_HR NULL
 #define OPTION_VAL_VMU_HR NULL
 #define OPTION_VAL_PURUPURU_HR NULL
+#define OPTION_VAL_MICROPHONE_HR NULL
 #define OPTION_VAL_DREAMPOTATO_HR NULL
 #define OPTION_VAL_NONE_HR "Ništa"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_HR NULL
@@ -45475,6 +45665,7 @@ struct retro_core_option_v2_definition option_defs_hr[] = {
       {
          { "VMU",      OPTION_VAL_VMU_HR },
          { "Purupuru", OPTION_VAL_PURUPURU_HR },
+         { "Microphone", OPTION_VAL_MICROPHONE_HR },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_HR },
          { "None",     OPTION_VAL_NONE_HR },
          { NULL, NULL },
@@ -45491,6 +45682,7 @@ struct retro_core_option_v2_definition option_defs_hr[] = {
       {
          { "VMU",      OPTION_VAL_VMU_HR },
          { "Purupuru", OPTION_VAL_PURUPURU_HR },
+         { "Microphone", OPTION_VAL_MICROPHONE_HR },
          { "None",     OPTION_VAL_NONE_HR },
          { NULL, NULL },
       },
@@ -45506,6 +45698,7 @@ struct retro_core_option_v2_definition option_defs_hr[] = {
       {
          { "VMU",      OPTION_VAL_VMU_HR },
          { "Purupuru", OPTION_VAL_PURUPURU_HR },
+         { "Microphone", OPTION_VAL_MICROPHONE_HR },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_HR },
          { "None",     OPTION_VAL_NONE_HR },
          { NULL, NULL },
@@ -45522,6 +45715,7 @@ struct retro_core_option_v2_definition option_defs_hr[] = {
       {
          { "VMU",      OPTION_VAL_VMU_HR },
          { "Purupuru", OPTION_VAL_PURUPURU_HR },
+         { "Microphone", OPTION_VAL_MICROPHONE_HR },
          { "None",     OPTION_VAL_NONE_HR },
          { NULL, NULL },
       },
@@ -45537,6 +45731,7 @@ struct retro_core_option_v2_definition option_defs_hr[] = {
       {
          { "VMU",      OPTION_VAL_VMU_HR },
          { "Purupuru", OPTION_VAL_PURUPURU_HR },
+         { "Microphone", OPTION_VAL_MICROPHONE_HR },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_HR },
          { "None",     OPTION_VAL_NONE_HR },
          { NULL, NULL },
@@ -45553,6 +45748,7 @@ struct retro_core_option_v2_definition option_defs_hr[] = {
       {
          { "VMU",      OPTION_VAL_VMU_HR },
          { "Purupuru", OPTION_VAL_PURUPURU_HR },
+         { "Microphone", OPTION_VAL_MICROPHONE_HR },
          { "None",     OPTION_VAL_NONE_HR },
          { NULL, NULL },
       },
@@ -45568,6 +45764,7 @@ struct retro_core_option_v2_definition option_defs_hr[] = {
       {
          { "VMU",      OPTION_VAL_VMU_HR },
          { "Purupuru", OPTION_VAL_PURUPURU_HR },
+         { "Microphone", OPTION_VAL_MICROPHONE_HR },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_HR },
          { "None",     OPTION_VAL_NONE_HR },
          { NULL, NULL },
@@ -45584,6 +45781,7 @@ struct retro_core_option_v2_definition option_defs_hr[] = {
       {
          { "VMU",      OPTION_VAL_VMU_HR },
          { "Purupuru", OPTION_VAL_PURUPURU_HR },
+         { "Microphone", OPTION_VAL_MICROPHONE_HR },
          { "None",     OPTION_VAL_NONE_HR },
          { NULL, NULL },
       },
@@ -46510,6 +46708,7 @@ struct retro_core_options_v2 options_hr = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_HU "Az A1 bővítőhelybe csatlakoztatott eszköz (A csatlakozó, 1. hely)."
 #define OPTION_VAL_VMU_HU NULL
 #define OPTION_VAL_PURUPURU_HU NULL
+#define OPTION_VAL_MICROPHONE_HU NULL
 #define OPTION_VAL_DREAMPOTATO_HU NULL
 #define OPTION_VAL_NONE_HU "Nincs"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_HU "Az A2 bővítőhelyen található eszköz"
@@ -47575,6 +47774,7 @@ struct retro_core_option_v2_definition option_defs_hu[] = {
       {
          { "VMU",      OPTION_VAL_VMU_HU },
          { "Purupuru", OPTION_VAL_PURUPURU_HU },
+         { "Microphone", OPTION_VAL_MICROPHONE_HU },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_HU },
          { "None",     OPTION_VAL_NONE_HU },
          { NULL, NULL },
@@ -47591,6 +47791,7 @@ struct retro_core_option_v2_definition option_defs_hu[] = {
       {
          { "VMU",      OPTION_VAL_VMU_HU },
          { "Purupuru", OPTION_VAL_PURUPURU_HU },
+         { "Microphone", OPTION_VAL_MICROPHONE_HU },
          { "None",     OPTION_VAL_NONE_HU },
          { NULL, NULL },
       },
@@ -47606,6 +47807,7 @@ struct retro_core_option_v2_definition option_defs_hu[] = {
       {
          { "VMU",      OPTION_VAL_VMU_HU },
          { "Purupuru", OPTION_VAL_PURUPURU_HU },
+         { "Microphone", OPTION_VAL_MICROPHONE_HU },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_HU },
          { "None",     OPTION_VAL_NONE_HU },
          { NULL, NULL },
@@ -47622,6 +47824,7 @@ struct retro_core_option_v2_definition option_defs_hu[] = {
       {
          { "VMU",      OPTION_VAL_VMU_HU },
          { "Purupuru", OPTION_VAL_PURUPURU_HU },
+         { "Microphone", OPTION_VAL_MICROPHONE_HU },
          { "None",     OPTION_VAL_NONE_HU },
          { NULL, NULL },
       },
@@ -47637,6 +47840,7 @@ struct retro_core_option_v2_definition option_defs_hu[] = {
       {
          { "VMU",      OPTION_VAL_VMU_HU },
          { "Purupuru", OPTION_VAL_PURUPURU_HU },
+         { "Microphone", OPTION_VAL_MICROPHONE_HU },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_HU },
          { "None",     OPTION_VAL_NONE_HU },
          { NULL, NULL },
@@ -47653,6 +47857,7 @@ struct retro_core_option_v2_definition option_defs_hu[] = {
       {
          { "VMU",      OPTION_VAL_VMU_HU },
          { "Purupuru", OPTION_VAL_PURUPURU_HU },
+         { "Microphone", OPTION_VAL_MICROPHONE_HU },
          { "None",     OPTION_VAL_NONE_HU },
          { NULL, NULL },
       },
@@ -47668,6 +47873,7 @@ struct retro_core_option_v2_definition option_defs_hu[] = {
       {
          { "VMU",      OPTION_VAL_VMU_HU },
          { "Purupuru", OPTION_VAL_PURUPURU_HU },
+         { "Microphone", OPTION_VAL_MICROPHONE_HU },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_HU },
          { "None",     OPTION_VAL_NONE_HU },
          { NULL, NULL },
@@ -47684,6 +47890,7 @@ struct retro_core_option_v2_definition option_defs_hu[] = {
       {
          { "VMU",      OPTION_VAL_VMU_HU },
          { "Purupuru", OPTION_VAL_PURUPURU_HU },
+         { "Microphone", OPTION_VAL_MICROPHONE_HU },
          { "None",     OPTION_VAL_NONE_HU },
          { NULL, NULL },
       },
@@ -48610,6 +48817,7 @@ struct retro_core_options_v2 options_hu = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_ID NULL
 #define OPTION_VAL_VMU_ID NULL
 #define OPTION_VAL_PURUPURU_ID NULL
+#define OPTION_VAL_MICROPHONE_ID NULL
 #define OPTION_VAL_DREAMPOTATO_ID NULL
 #define OPTION_VAL_NONE_ID "Tak ada"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_ID NULL
@@ -49675,6 +49883,7 @@ struct retro_core_option_v2_definition option_defs_id[] = {
       {
          { "VMU",      OPTION_VAL_VMU_ID },
          { "Purupuru", OPTION_VAL_PURUPURU_ID },
+         { "Microphone", OPTION_VAL_MICROPHONE_ID },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_ID },
          { "None",     OPTION_VAL_NONE_ID },
          { NULL, NULL },
@@ -49691,6 +49900,7 @@ struct retro_core_option_v2_definition option_defs_id[] = {
       {
          { "VMU",      OPTION_VAL_VMU_ID },
          { "Purupuru", OPTION_VAL_PURUPURU_ID },
+         { "Microphone", OPTION_VAL_MICROPHONE_ID },
          { "None",     OPTION_VAL_NONE_ID },
          { NULL, NULL },
       },
@@ -49706,6 +49916,7 @@ struct retro_core_option_v2_definition option_defs_id[] = {
       {
          { "VMU",      OPTION_VAL_VMU_ID },
          { "Purupuru", OPTION_VAL_PURUPURU_ID },
+         { "Microphone", OPTION_VAL_MICROPHONE_ID },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_ID },
          { "None",     OPTION_VAL_NONE_ID },
          { NULL, NULL },
@@ -49722,6 +49933,7 @@ struct retro_core_option_v2_definition option_defs_id[] = {
       {
          { "VMU",      OPTION_VAL_VMU_ID },
          { "Purupuru", OPTION_VAL_PURUPURU_ID },
+         { "Microphone", OPTION_VAL_MICROPHONE_ID },
          { "None",     OPTION_VAL_NONE_ID },
          { NULL, NULL },
       },
@@ -49737,6 +49949,7 @@ struct retro_core_option_v2_definition option_defs_id[] = {
       {
          { "VMU",      OPTION_VAL_VMU_ID },
          { "Purupuru", OPTION_VAL_PURUPURU_ID },
+         { "Microphone", OPTION_VAL_MICROPHONE_ID },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_ID },
          { "None",     OPTION_VAL_NONE_ID },
          { NULL, NULL },
@@ -49753,6 +49966,7 @@ struct retro_core_option_v2_definition option_defs_id[] = {
       {
          { "VMU",      OPTION_VAL_VMU_ID },
          { "Purupuru", OPTION_VAL_PURUPURU_ID },
+         { "Microphone", OPTION_VAL_MICROPHONE_ID },
          { "None",     OPTION_VAL_NONE_ID },
          { NULL, NULL },
       },
@@ -49768,6 +49982,7 @@ struct retro_core_option_v2_definition option_defs_id[] = {
       {
          { "VMU",      OPTION_VAL_VMU_ID },
          { "Purupuru", OPTION_VAL_PURUPURU_ID },
+         { "Microphone", OPTION_VAL_MICROPHONE_ID },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_ID },
          { "None",     OPTION_VAL_NONE_ID },
          { NULL, NULL },
@@ -49784,6 +49999,7 @@ struct retro_core_option_v2_definition option_defs_id[] = {
       {
          { "VMU",      OPTION_VAL_VMU_ID },
          { "Purupuru", OPTION_VAL_PURUPURU_ID },
+         { "Microphone", OPTION_VAL_MICROPHONE_ID },
          { "None",     OPTION_VAL_NONE_ID },
          { NULL, NULL },
       },
@@ -50710,6 +50926,7 @@ struct retro_core_options_v2 options_id = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_IT "Selezionare il dispositivo collegato allo slot di espansione A1 (porta A slot 1)."
 #define OPTION_VAL_VMU_IT NULL
 #define OPTION_VAL_PURUPURU_IT NULL
+#define OPTION_VAL_MICROPHONE_IT NULL
 #define OPTION_VAL_DREAMPOTATO_IT NULL
 #define OPTION_VAL_NONE_IT "Nessuno"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_IT "Dispositivo nello slot di espansione A2"
@@ -51775,6 +51992,7 @@ struct retro_core_option_v2_definition option_defs_it[] = {
       {
          { "VMU",      OPTION_VAL_VMU_IT },
          { "Purupuru", OPTION_VAL_PURUPURU_IT },
+         { "Microphone", OPTION_VAL_MICROPHONE_IT },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_IT },
          { "None",     OPTION_VAL_NONE_IT },
          { NULL, NULL },
@@ -51791,6 +52009,7 @@ struct retro_core_option_v2_definition option_defs_it[] = {
       {
          { "VMU",      OPTION_VAL_VMU_IT },
          { "Purupuru", OPTION_VAL_PURUPURU_IT },
+         { "Microphone", OPTION_VAL_MICROPHONE_IT },
          { "None",     OPTION_VAL_NONE_IT },
          { NULL, NULL },
       },
@@ -51806,6 +52025,7 @@ struct retro_core_option_v2_definition option_defs_it[] = {
       {
          { "VMU",      OPTION_VAL_VMU_IT },
          { "Purupuru", OPTION_VAL_PURUPURU_IT },
+         { "Microphone", OPTION_VAL_MICROPHONE_IT },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_IT },
          { "None",     OPTION_VAL_NONE_IT },
          { NULL, NULL },
@@ -51822,6 +52042,7 @@ struct retro_core_option_v2_definition option_defs_it[] = {
       {
          { "VMU",      OPTION_VAL_VMU_IT },
          { "Purupuru", OPTION_VAL_PURUPURU_IT },
+         { "Microphone", OPTION_VAL_MICROPHONE_IT },
          { "None",     OPTION_VAL_NONE_IT },
          { NULL, NULL },
       },
@@ -51837,6 +52058,7 @@ struct retro_core_option_v2_definition option_defs_it[] = {
       {
          { "VMU",      OPTION_VAL_VMU_IT },
          { "Purupuru", OPTION_VAL_PURUPURU_IT },
+         { "Microphone", OPTION_VAL_MICROPHONE_IT },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_IT },
          { "None",     OPTION_VAL_NONE_IT },
          { NULL, NULL },
@@ -51853,6 +52075,7 @@ struct retro_core_option_v2_definition option_defs_it[] = {
       {
          { "VMU",      OPTION_VAL_VMU_IT },
          { "Purupuru", OPTION_VAL_PURUPURU_IT },
+         { "Microphone", OPTION_VAL_MICROPHONE_IT },
          { "None",     OPTION_VAL_NONE_IT },
          { NULL, NULL },
       },
@@ -51868,6 +52091,7 @@ struct retro_core_option_v2_definition option_defs_it[] = {
       {
          { "VMU",      OPTION_VAL_VMU_IT },
          { "Purupuru", OPTION_VAL_PURUPURU_IT },
+         { "Microphone", OPTION_VAL_MICROPHONE_IT },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_IT },
          { "None",     OPTION_VAL_NONE_IT },
          { NULL, NULL },
@@ -51884,6 +52108,7 @@ struct retro_core_option_v2_definition option_defs_it[] = {
       {
          { "VMU",      OPTION_VAL_VMU_IT },
          { "Purupuru", OPTION_VAL_PURUPURU_IT },
+         { "Microphone", OPTION_VAL_MICROPHONE_IT },
          { "None",     OPTION_VAL_NONE_IT },
          { NULL, NULL },
       },
@@ -52810,6 +53035,7 @@ struct retro_core_options_v2 options_it = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_JA "拡張スロット A1 (ポート A スロット 1) に接続するデバイスを選択します。"
 #define OPTION_VAL_VMU_JA NULL
 #define OPTION_VAL_PURUPURU_JA "ぷるぷるぱっく"
+#define OPTION_VAL_MICROPHONE_JA NULL
 #define OPTION_VAL_DREAMPOTATO_JA NULL
 #define OPTION_VAL_NONE_JA "なし"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_JA "拡張スロット A2 デバイス"
@@ -53875,6 +54101,7 @@ struct retro_core_option_v2_definition option_defs_ja[] = {
       {
          { "VMU",      OPTION_VAL_VMU_JA },
          { "Purupuru", OPTION_VAL_PURUPURU_JA },
+         { "Microphone", OPTION_VAL_MICROPHONE_JA },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_JA },
          { "None",     OPTION_VAL_NONE_JA },
          { NULL, NULL },
@@ -53891,6 +54118,7 @@ struct retro_core_option_v2_definition option_defs_ja[] = {
       {
          { "VMU",      OPTION_VAL_VMU_JA },
          { "Purupuru", OPTION_VAL_PURUPURU_JA },
+         { "Microphone", OPTION_VAL_MICROPHONE_JA },
          { "None",     OPTION_VAL_NONE_JA },
          { NULL, NULL },
       },
@@ -53906,6 +54134,7 @@ struct retro_core_option_v2_definition option_defs_ja[] = {
       {
          { "VMU",      OPTION_VAL_VMU_JA },
          { "Purupuru", OPTION_VAL_PURUPURU_JA },
+         { "Microphone", OPTION_VAL_MICROPHONE_JA },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_JA },
          { "None",     OPTION_VAL_NONE_JA },
          { NULL, NULL },
@@ -53922,6 +54151,7 @@ struct retro_core_option_v2_definition option_defs_ja[] = {
       {
          { "VMU",      OPTION_VAL_VMU_JA },
          { "Purupuru", OPTION_VAL_PURUPURU_JA },
+         { "Microphone", OPTION_VAL_MICROPHONE_JA },
          { "None",     OPTION_VAL_NONE_JA },
          { NULL, NULL },
       },
@@ -53937,6 +54167,7 @@ struct retro_core_option_v2_definition option_defs_ja[] = {
       {
          { "VMU",      OPTION_VAL_VMU_JA },
          { "Purupuru", OPTION_VAL_PURUPURU_JA },
+         { "Microphone", OPTION_VAL_MICROPHONE_JA },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_JA },
          { "None",     OPTION_VAL_NONE_JA },
          { NULL, NULL },
@@ -53953,6 +54184,7 @@ struct retro_core_option_v2_definition option_defs_ja[] = {
       {
          { "VMU",      OPTION_VAL_VMU_JA },
          { "Purupuru", OPTION_VAL_PURUPURU_JA },
+         { "Microphone", OPTION_VAL_MICROPHONE_JA },
          { "None",     OPTION_VAL_NONE_JA },
          { NULL, NULL },
       },
@@ -53968,6 +54200,7 @@ struct retro_core_option_v2_definition option_defs_ja[] = {
       {
          { "VMU",      OPTION_VAL_VMU_JA },
          { "Purupuru", OPTION_VAL_PURUPURU_JA },
+         { "Microphone", OPTION_VAL_MICROPHONE_JA },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_JA },
          { "None",     OPTION_VAL_NONE_JA },
          { NULL, NULL },
@@ -53984,6 +54217,7 @@ struct retro_core_option_v2_definition option_defs_ja[] = {
       {
          { "VMU",      OPTION_VAL_VMU_JA },
          { "Purupuru", OPTION_VAL_PURUPURU_JA },
+         { "Microphone", OPTION_VAL_MICROPHONE_JA },
          { "None",     OPTION_VAL_NONE_JA },
          { NULL, NULL },
       },
@@ -54910,6 +55144,7 @@ struct retro_core_options_v2 options_ja = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_KO "확장 슬롯 A1(포트 A 슬롯 1)에 연결할 장치를 선택합니다."
 #define OPTION_VAL_VMU_KO NULL
 #define OPTION_VAL_PURUPURU_KO "진동 팩"
+#define OPTION_VAL_MICROPHONE_KO NULL
 #define OPTION_VAL_DREAMPOTATO_KO NULL
 #define OPTION_VAL_NONE_KO "없음"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_KO "확장 슬롯 A2의 장치"
@@ -55975,6 +56210,7 @@ struct retro_core_option_v2_definition option_defs_ko[] = {
       {
          { "VMU",      OPTION_VAL_VMU_KO },
          { "Purupuru", OPTION_VAL_PURUPURU_KO },
+         { "Microphone", OPTION_VAL_MICROPHONE_KO },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_KO },
          { "None",     OPTION_VAL_NONE_KO },
          { NULL, NULL },
@@ -55991,6 +56227,7 @@ struct retro_core_option_v2_definition option_defs_ko[] = {
       {
          { "VMU",      OPTION_VAL_VMU_KO },
          { "Purupuru", OPTION_VAL_PURUPURU_KO },
+         { "Microphone", OPTION_VAL_MICROPHONE_KO },
          { "None",     OPTION_VAL_NONE_KO },
          { NULL, NULL },
       },
@@ -56006,6 +56243,7 @@ struct retro_core_option_v2_definition option_defs_ko[] = {
       {
          { "VMU",      OPTION_VAL_VMU_KO },
          { "Purupuru", OPTION_VAL_PURUPURU_KO },
+         { "Microphone", OPTION_VAL_MICROPHONE_KO },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_KO },
          { "None",     OPTION_VAL_NONE_KO },
          { NULL, NULL },
@@ -56022,6 +56260,7 @@ struct retro_core_option_v2_definition option_defs_ko[] = {
       {
          { "VMU",      OPTION_VAL_VMU_KO },
          { "Purupuru", OPTION_VAL_PURUPURU_KO },
+         { "Microphone", OPTION_VAL_MICROPHONE_KO },
          { "None",     OPTION_VAL_NONE_KO },
          { NULL, NULL },
       },
@@ -56037,6 +56276,7 @@ struct retro_core_option_v2_definition option_defs_ko[] = {
       {
          { "VMU",      OPTION_VAL_VMU_KO },
          { "Purupuru", OPTION_VAL_PURUPURU_KO },
+         { "Microphone", OPTION_VAL_MICROPHONE_KO },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_KO },
          { "None",     OPTION_VAL_NONE_KO },
          { NULL, NULL },
@@ -56053,6 +56293,7 @@ struct retro_core_option_v2_definition option_defs_ko[] = {
       {
          { "VMU",      OPTION_VAL_VMU_KO },
          { "Purupuru", OPTION_VAL_PURUPURU_KO },
+         { "Microphone", OPTION_VAL_MICROPHONE_KO },
          { "None",     OPTION_VAL_NONE_KO },
          { NULL, NULL },
       },
@@ -56068,6 +56309,7 @@ struct retro_core_option_v2_definition option_defs_ko[] = {
       {
          { "VMU",      OPTION_VAL_VMU_KO },
          { "Purupuru", OPTION_VAL_PURUPURU_KO },
+         { "Microphone", OPTION_VAL_MICROPHONE_KO },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_KO },
          { "None",     OPTION_VAL_NONE_KO },
          { NULL, NULL },
@@ -56084,6 +56326,7 @@ struct retro_core_option_v2_definition option_defs_ko[] = {
       {
          { "VMU",      OPTION_VAL_VMU_KO },
          { "Purupuru", OPTION_VAL_PURUPURU_KO },
+         { "Microphone", OPTION_VAL_MICROPHONE_KO },
          { "None",     OPTION_VAL_NONE_KO },
          { NULL, NULL },
       },
@@ -57010,6 +57253,7 @@ struct retro_core_options_v2 options_ko = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_NL NULL
 #define OPTION_VAL_VMU_NL NULL
 #define OPTION_VAL_PURUPURU_NL NULL
+#define OPTION_VAL_MICROPHONE_NL NULL
 #define OPTION_VAL_DREAMPOTATO_NL NULL
 #define OPTION_VAL_NONE_NL "Geen"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_NL NULL
@@ -58075,6 +58319,7 @@ struct retro_core_option_v2_definition option_defs_nl[] = {
       {
          { "VMU",      OPTION_VAL_VMU_NL },
          { "Purupuru", OPTION_VAL_PURUPURU_NL },
+         { "Microphone", OPTION_VAL_MICROPHONE_NL },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_NL },
          { "None",     OPTION_VAL_NONE_NL },
          { NULL, NULL },
@@ -58091,6 +58336,7 @@ struct retro_core_option_v2_definition option_defs_nl[] = {
       {
          { "VMU",      OPTION_VAL_VMU_NL },
          { "Purupuru", OPTION_VAL_PURUPURU_NL },
+         { "Microphone", OPTION_VAL_MICROPHONE_NL },
          { "None",     OPTION_VAL_NONE_NL },
          { NULL, NULL },
       },
@@ -58106,6 +58352,7 @@ struct retro_core_option_v2_definition option_defs_nl[] = {
       {
          { "VMU",      OPTION_VAL_VMU_NL },
          { "Purupuru", OPTION_VAL_PURUPURU_NL },
+         { "Microphone", OPTION_VAL_MICROPHONE_NL },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_NL },
          { "None",     OPTION_VAL_NONE_NL },
          { NULL, NULL },
@@ -58122,6 +58369,7 @@ struct retro_core_option_v2_definition option_defs_nl[] = {
       {
          { "VMU",      OPTION_VAL_VMU_NL },
          { "Purupuru", OPTION_VAL_PURUPURU_NL },
+         { "Microphone", OPTION_VAL_MICROPHONE_NL },
          { "None",     OPTION_VAL_NONE_NL },
          { NULL, NULL },
       },
@@ -58137,6 +58385,7 @@ struct retro_core_option_v2_definition option_defs_nl[] = {
       {
          { "VMU",      OPTION_VAL_VMU_NL },
          { "Purupuru", OPTION_VAL_PURUPURU_NL },
+         { "Microphone", OPTION_VAL_MICROPHONE_NL },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_NL },
          { "None",     OPTION_VAL_NONE_NL },
          { NULL, NULL },
@@ -58153,6 +58402,7 @@ struct retro_core_option_v2_definition option_defs_nl[] = {
       {
          { "VMU",      OPTION_VAL_VMU_NL },
          { "Purupuru", OPTION_VAL_PURUPURU_NL },
+         { "Microphone", OPTION_VAL_MICROPHONE_NL },
          { "None",     OPTION_VAL_NONE_NL },
          { NULL, NULL },
       },
@@ -58168,6 +58418,7 @@ struct retro_core_option_v2_definition option_defs_nl[] = {
       {
          { "VMU",      OPTION_VAL_VMU_NL },
          { "Purupuru", OPTION_VAL_PURUPURU_NL },
+         { "Microphone", OPTION_VAL_MICROPHONE_NL },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_NL },
          { "None",     OPTION_VAL_NONE_NL },
          { NULL, NULL },
@@ -58184,6 +58435,7 @@ struct retro_core_option_v2_definition option_defs_nl[] = {
       {
          { "VMU",      OPTION_VAL_VMU_NL },
          { "Purupuru", OPTION_VAL_PURUPURU_NL },
+         { "Microphone", OPTION_VAL_MICROPHONE_NL },
          { "None",     OPTION_VAL_NONE_NL },
          { NULL, NULL },
       },
@@ -59110,6 +59362,7 @@ struct retro_core_options_v2 options_nl = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_NO NULL
 #define OPTION_VAL_VMU_NO NULL
 #define OPTION_VAL_PURUPURU_NO NULL
+#define OPTION_VAL_MICROPHONE_NO NULL
 #define OPTION_VAL_DREAMPOTATO_NO NULL
 #define OPTION_VAL_NONE_NO "Ingen"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_NO NULL
@@ -60175,6 +60428,7 @@ struct retro_core_option_v2_definition option_defs_no[] = {
       {
          { "VMU",      OPTION_VAL_VMU_NO },
          { "Purupuru", OPTION_VAL_PURUPURU_NO },
+         { "Microphone", OPTION_VAL_MICROPHONE_NO },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_NO },
          { "None",     OPTION_VAL_NONE_NO },
          { NULL, NULL },
@@ -60191,6 +60445,7 @@ struct retro_core_option_v2_definition option_defs_no[] = {
       {
          { "VMU",      OPTION_VAL_VMU_NO },
          { "Purupuru", OPTION_VAL_PURUPURU_NO },
+         { "Microphone", OPTION_VAL_MICROPHONE_NO },
          { "None",     OPTION_VAL_NONE_NO },
          { NULL, NULL },
       },
@@ -60206,6 +60461,7 @@ struct retro_core_option_v2_definition option_defs_no[] = {
       {
          { "VMU",      OPTION_VAL_VMU_NO },
          { "Purupuru", OPTION_VAL_PURUPURU_NO },
+         { "Microphone", OPTION_VAL_MICROPHONE_NO },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_NO },
          { "None",     OPTION_VAL_NONE_NO },
          { NULL, NULL },
@@ -60222,6 +60478,7 @@ struct retro_core_option_v2_definition option_defs_no[] = {
       {
          { "VMU",      OPTION_VAL_VMU_NO },
          { "Purupuru", OPTION_VAL_PURUPURU_NO },
+         { "Microphone", OPTION_VAL_MICROPHONE_NO },
          { "None",     OPTION_VAL_NONE_NO },
          { NULL, NULL },
       },
@@ -60237,6 +60494,7 @@ struct retro_core_option_v2_definition option_defs_no[] = {
       {
          { "VMU",      OPTION_VAL_VMU_NO },
          { "Purupuru", OPTION_VAL_PURUPURU_NO },
+         { "Microphone", OPTION_VAL_MICROPHONE_NO },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_NO },
          { "None",     OPTION_VAL_NONE_NO },
          { NULL, NULL },
@@ -60253,6 +60511,7 @@ struct retro_core_option_v2_definition option_defs_no[] = {
       {
          { "VMU",      OPTION_VAL_VMU_NO },
          { "Purupuru", OPTION_VAL_PURUPURU_NO },
+         { "Microphone", OPTION_VAL_MICROPHONE_NO },
          { "None",     OPTION_VAL_NONE_NO },
          { NULL, NULL },
       },
@@ -60268,6 +60527,7 @@ struct retro_core_option_v2_definition option_defs_no[] = {
       {
          { "VMU",      OPTION_VAL_VMU_NO },
          { "Purupuru", OPTION_VAL_PURUPURU_NO },
+         { "Microphone", OPTION_VAL_MICROPHONE_NO },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_NO },
          { "None",     OPTION_VAL_NONE_NO },
          { NULL, NULL },
@@ -60284,6 +60544,7 @@ struct retro_core_option_v2_definition option_defs_no[] = {
       {
          { "VMU",      OPTION_VAL_VMU_NO },
          { "Purupuru", OPTION_VAL_PURUPURU_NO },
+         { "Microphone", OPTION_VAL_MICROPHONE_NO },
          { "None",     OPTION_VAL_NONE_NO },
          { NULL, NULL },
       },
@@ -61210,6 +61471,7 @@ struct retro_core_options_v2 options_no = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_OR NULL
 #define OPTION_VAL_VMU_OR NULL
 #define OPTION_VAL_PURUPURU_OR NULL
+#define OPTION_VAL_MICROPHONE_OR NULL
 #define OPTION_VAL_DREAMPOTATO_OR NULL
 #define OPTION_VAL_NONE_OR NULL
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_OR NULL
@@ -62275,6 +62537,7 @@ struct retro_core_option_v2_definition option_defs_or[] = {
       {
          { "VMU",      OPTION_VAL_VMU_OR },
          { "Purupuru", OPTION_VAL_PURUPURU_OR },
+         { "Microphone", OPTION_VAL_MICROPHONE_OR },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_OR },
          { "None",     OPTION_VAL_NONE_OR },
          { NULL, NULL },
@@ -62291,6 +62554,7 @@ struct retro_core_option_v2_definition option_defs_or[] = {
       {
          { "VMU",      OPTION_VAL_VMU_OR },
          { "Purupuru", OPTION_VAL_PURUPURU_OR },
+         { "Microphone", OPTION_VAL_MICROPHONE_OR },
          { "None",     OPTION_VAL_NONE_OR },
          { NULL, NULL },
       },
@@ -62306,6 +62570,7 @@ struct retro_core_option_v2_definition option_defs_or[] = {
       {
          { "VMU",      OPTION_VAL_VMU_OR },
          { "Purupuru", OPTION_VAL_PURUPURU_OR },
+         { "Microphone", OPTION_VAL_MICROPHONE_OR },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_OR },
          { "None",     OPTION_VAL_NONE_OR },
          { NULL, NULL },
@@ -62322,6 +62587,7 @@ struct retro_core_option_v2_definition option_defs_or[] = {
       {
          { "VMU",      OPTION_VAL_VMU_OR },
          { "Purupuru", OPTION_VAL_PURUPURU_OR },
+         { "Microphone", OPTION_VAL_MICROPHONE_OR },
          { "None",     OPTION_VAL_NONE_OR },
          { NULL, NULL },
       },
@@ -62337,6 +62603,7 @@ struct retro_core_option_v2_definition option_defs_or[] = {
       {
          { "VMU",      OPTION_VAL_VMU_OR },
          { "Purupuru", OPTION_VAL_PURUPURU_OR },
+         { "Microphone", OPTION_VAL_MICROPHONE_OR },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_OR },
          { "None",     OPTION_VAL_NONE_OR },
          { NULL, NULL },
@@ -62353,6 +62620,7 @@ struct retro_core_option_v2_definition option_defs_or[] = {
       {
          { "VMU",      OPTION_VAL_VMU_OR },
          { "Purupuru", OPTION_VAL_PURUPURU_OR },
+         { "Microphone", OPTION_VAL_MICROPHONE_OR },
          { "None",     OPTION_VAL_NONE_OR },
          { NULL, NULL },
       },
@@ -62368,6 +62636,7 @@ struct retro_core_option_v2_definition option_defs_or[] = {
       {
          { "VMU",      OPTION_VAL_VMU_OR },
          { "Purupuru", OPTION_VAL_PURUPURU_OR },
+         { "Microphone", OPTION_VAL_MICROPHONE_OR },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_OR },
          { "None",     OPTION_VAL_NONE_OR },
          { NULL, NULL },
@@ -62384,6 +62653,7 @@ struct retro_core_option_v2_definition option_defs_or[] = {
       {
          { "VMU",      OPTION_VAL_VMU_OR },
          { "Purupuru", OPTION_VAL_PURUPURU_OR },
+         { "Microphone", OPTION_VAL_MICROPHONE_OR },
          { "None",     OPTION_VAL_NONE_OR },
          { NULL, NULL },
       },
@@ -63310,6 +63580,7 @@ struct retro_core_options_v2 options_or = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_PL "Wybierz urządzenie podłączone do gniazda rozszerzeń A1 (port A slot 1)."
 #define OPTION_VAL_VMU_PL NULL
 #define OPTION_VAL_PURUPURU_PL NULL
+#define OPTION_VAL_MICROPHONE_PL NULL
 #define OPTION_VAL_DREAMPOTATO_PL NULL
 #define OPTION_VAL_NONE_PL "Brak"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_PL "Urządzenie w gnieździe rozszerzeń A2"
@@ -64375,6 +64646,7 @@ struct retro_core_option_v2_definition option_defs_pl[] = {
       {
          { "VMU",      OPTION_VAL_VMU_PL },
          { "Purupuru", OPTION_VAL_PURUPURU_PL },
+         { "Microphone", OPTION_VAL_MICROPHONE_PL },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_PL },
          { "None",     OPTION_VAL_NONE_PL },
          { NULL, NULL },
@@ -64391,6 +64663,7 @@ struct retro_core_option_v2_definition option_defs_pl[] = {
       {
          { "VMU",      OPTION_VAL_VMU_PL },
          { "Purupuru", OPTION_VAL_PURUPURU_PL },
+         { "Microphone", OPTION_VAL_MICROPHONE_PL },
          { "None",     OPTION_VAL_NONE_PL },
          { NULL, NULL },
       },
@@ -64406,6 +64679,7 @@ struct retro_core_option_v2_definition option_defs_pl[] = {
       {
          { "VMU",      OPTION_VAL_VMU_PL },
          { "Purupuru", OPTION_VAL_PURUPURU_PL },
+         { "Microphone", OPTION_VAL_MICROPHONE_PL },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_PL },
          { "None",     OPTION_VAL_NONE_PL },
          { NULL, NULL },
@@ -64422,6 +64696,7 @@ struct retro_core_option_v2_definition option_defs_pl[] = {
       {
          { "VMU",      OPTION_VAL_VMU_PL },
          { "Purupuru", OPTION_VAL_PURUPURU_PL },
+         { "Microphone", OPTION_VAL_MICROPHONE_PL },
          { "None",     OPTION_VAL_NONE_PL },
          { NULL, NULL },
       },
@@ -64437,6 +64712,7 @@ struct retro_core_option_v2_definition option_defs_pl[] = {
       {
          { "VMU",      OPTION_VAL_VMU_PL },
          { "Purupuru", OPTION_VAL_PURUPURU_PL },
+         { "Microphone", OPTION_VAL_MICROPHONE_PL },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_PL },
          { "None",     OPTION_VAL_NONE_PL },
          { NULL, NULL },
@@ -64453,6 +64729,7 @@ struct retro_core_option_v2_definition option_defs_pl[] = {
       {
          { "VMU",      OPTION_VAL_VMU_PL },
          { "Purupuru", OPTION_VAL_PURUPURU_PL },
+         { "Microphone", OPTION_VAL_MICROPHONE_PL },
          { "None",     OPTION_VAL_NONE_PL },
          { NULL, NULL },
       },
@@ -64468,6 +64745,7 @@ struct retro_core_option_v2_definition option_defs_pl[] = {
       {
          { "VMU",      OPTION_VAL_VMU_PL },
          { "Purupuru", OPTION_VAL_PURUPURU_PL },
+         { "Microphone", OPTION_VAL_MICROPHONE_PL },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_PL },
          { "None",     OPTION_VAL_NONE_PL },
          { NULL, NULL },
@@ -64484,6 +64762,7 @@ struct retro_core_option_v2_definition option_defs_pl[] = {
       {
          { "VMU",      OPTION_VAL_VMU_PL },
          { "Purupuru", OPTION_VAL_PURUPURU_PL },
+         { "Microphone", OPTION_VAL_MICROPHONE_PL },
          { "None",     OPTION_VAL_NONE_PL },
          { NULL, NULL },
       },
@@ -65410,6 +65689,7 @@ struct retro_core_options_v2 options_pl = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_PT_BR "Define o dispositivo conectado no encaixe de expansão A1 (porta A, compartimento 1)."
 #define OPTION_VAL_VMU_PT_BR NULL
 #define OPTION_VAL_PURUPURU_PT_BR "Aparelho de Vibração"
+#define OPTION_VAL_MICROPHONE_PT_BR NULL
 #define OPTION_VAL_DREAMPOTATO_PT_BR NULL
 #define OPTION_VAL_NONE_PT_BR "Nenhum"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_PT_BR "Encaixe A2"
@@ -66475,6 +66755,7 @@ struct retro_core_option_v2_definition option_defs_pt_br[] = {
       {
          { "VMU",      OPTION_VAL_VMU_PT_BR },
          { "Purupuru", OPTION_VAL_PURUPURU_PT_BR },
+         { "Microphone", OPTION_VAL_MICROPHONE_PT_BR },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_PT_BR },
          { "None",     OPTION_VAL_NONE_PT_BR },
          { NULL, NULL },
@@ -66491,6 +66772,7 @@ struct retro_core_option_v2_definition option_defs_pt_br[] = {
       {
          { "VMU",      OPTION_VAL_VMU_PT_BR },
          { "Purupuru", OPTION_VAL_PURUPURU_PT_BR },
+         { "Microphone", OPTION_VAL_MICROPHONE_PT_BR },
          { "None",     OPTION_VAL_NONE_PT_BR },
          { NULL, NULL },
       },
@@ -66506,6 +66788,7 @@ struct retro_core_option_v2_definition option_defs_pt_br[] = {
       {
          { "VMU",      OPTION_VAL_VMU_PT_BR },
          { "Purupuru", OPTION_VAL_PURUPURU_PT_BR },
+         { "Microphone", OPTION_VAL_MICROPHONE_PT_BR },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_PT_BR },
          { "None",     OPTION_VAL_NONE_PT_BR },
          { NULL, NULL },
@@ -66522,6 +66805,7 @@ struct retro_core_option_v2_definition option_defs_pt_br[] = {
       {
          { "VMU",      OPTION_VAL_VMU_PT_BR },
          { "Purupuru", OPTION_VAL_PURUPURU_PT_BR },
+         { "Microphone", OPTION_VAL_MICROPHONE_PT_BR },
          { "None",     OPTION_VAL_NONE_PT_BR },
          { NULL, NULL },
       },
@@ -66537,6 +66821,7 @@ struct retro_core_option_v2_definition option_defs_pt_br[] = {
       {
          { "VMU",      OPTION_VAL_VMU_PT_BR },
          { "Purupuru", OPTION_VAL_PURUPURU_PT_BR },
+         { "Microphone", OPTION_VAL_MICROPHONE_PT_BR },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_PT_BR },
          { "None",     OPTION_VAL_NONE_PT_BR },
          { NULL, NULL },
@@ -66553,6 +66838,7 @@ struct retro_core_option_v2_definition option_defs_pt_br[] = {
       {
          { "VMU",      OPTION_VAL_VMU_PT_BR },
          { "Purupuru", OPTION_VAL_PURUPURU_PT_BR },
+         { "Microphone", OPTION_VAL_MICROPHONE_PT_BR },
          { "None",     OPTION_VAL_NONE_PT_BR },
          { NULL, NULL },
       },
@@ -66568,6 +66854,7 @@ struct retro_core_option_v2_definition option_defs_pt_br[] = {
       {
          { "VMU",      OPTION_VAL_VMU_PT_BR },
          { "Purupuru", OPTION_VAL_PURUPURU_PT_BR },
+         { "Microphone", OPTION_VAL_MICROPHONE_PT_BR },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_PT_BR },
          { "None",     OPTION_VAL_NONE_PT_BR },
          { NULL, NULL },
@@ -66584,6 +66871,7 @@ struct retro_core_option_v2_definition option_defs_pt_br[] = {
       {
          { "VMU",      OPTION_VAL_VMU_PT_BR },
          { "Purupuru", OPTION_VAL_PURUPURU_PT_BR },
+         { "Microphone", OPTION_VAL_MICROPHONE_PT_BR },
          { "None",     OPTION_VAL_NONE_PT_BR },
          { NULL, NULL },
       },
@@ -67510,6 +67798,7 @@ struct retro_core_options_v2 options_pt_br = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_PT_PT NULL
 #define OPTION_VAL_VMU_PT_PT NULL
 #define OPTION_VAL_PURUPURU_PT_PT NULL
+#define OPTION_VAL_MICROPHONE_PT_PT NULL
 #define OPTION_VAL_DREAMPOTATO_PT_PT NULL
 #define OPTION_VAL_NONE_PT_PT "Não partilhar"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_PT_PT NULL
@@ -68575,6 +68864,7 @@ struct retro_core_option_v2_definition option_defs_pt_pt[] = {
       {
          { "VMU",      OPTION_VAL_VMU_PT_PT },
          { "Purupuru", OPTION_VAL_PURUPURU_PT_PT },
+         { "Microphone", OPTION_VAL_MICROPHONE_PT_PT },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_PT_PT },
          { "None",     OPTION_VAL_NONE_PT_PT },
          { NULL, NULL },
@@ -68591,6 +68881,7 @@ struct retro_core_option_v2_definition option_defs_pt_pt[] = {
       {
          { "VMU",      OPTION_VAL_VMU_PT_PT },
          { "Purupuru", OPTION_VAL_PURUPURU_PT_PT },
+         { "Microphone", OPTION_VAL_MICROPHONE_PT_PT },
          { "None",     OPTION_VAL_NONE_PT_PT },
          { NULL, NULL },
       },
@@ -68606,6 +68897,7 @@ struct retro_core_option_v2_definition option_defs_pt_pt[] = {
       {
          { "VMU",      OPTION_VAL_VMU_PT_PT },
          { "Purupuru", OPTION_VAL_PURUPURU_PT_PT },
+         { "Microphone", OPTION_VAL_MICROPHONE_PT_PT },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_PT_PT },
          { "None",     OPTION_VAL_NONE_PT_PT },
          { NULL, NULL },
@@ -68622,6 +68914,7 @@ struct retro_core_option_v2_definition option_defs_pt_pt[] = {
       {
          { "VMU",      OPTION_VAL_VMU_PT_PT },
          { "Purupuru", OPTION_VAL_PURUPURU_PT_PT },
+         { "Microphone", OPTION_VAL_MICROPHONE_PT_PT },
          { "None",     OPTION_VAL_NONE_PT_PT },
          { NULL, NULL },
       },
@@ -68637,6 +68930,7 @@ struct retro_core_option_v2_definition option_defs_pt_pt[] = {
       {
          { "VMU",      OPTION_VAL_VMU_PT_PT },
          { "Purupuru", OPTION_VAL_PURUPURU_PT_PT },
+         { "Microphone", OPTION_VAL_MICROPHONE_PT_PT },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_PT_PT },
          { "None",     OPTION_VAL_NONE_PT_PT },
          { NULL, NULL },
@@ -68653,6 +68947,7 @@ struct retro_core_option_v2_definition option_defs_pt_pt[] = {
       {
          { "VMU",      OPTION_VAL_VMU_PT_PT },
          { "Purupuru", OPTION_VAL_PURUPURU_PT_PT },
+         { "Microphone", OPTION_VAL_MICROPHONE_PT_PT },
          { "None",     OPTION_VAL_NONE_PT_PT },
          { NULL, NULL },
       },
@@ -68668,6 +68963,7 @@ struct retro_core_option_v2_definition option_defs_pt_pt[] = {
       {
          { "VMU",      OPTION_VAL_VMU_PT_PT },
          { "Purupuru", OPTION_VAL_PURUPURU_PT_PT },
+         { "Microphone", OPTION_VAL_MICROPHONE_PT_PT },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_PT_PT },
          { "None",     OPTION_VAL_NONE_PT_PT },
          { NULL, NULL },
@@ -68684,6 +68980,7 @@ struct retro_core_option_v2_definition option_defs_pt_pt[] = {
       {
          { "VMU",      OPTION_VAL_VMU_PT_PT },
          { "Purupuru", OPTION_VAL_PURUPURU_PT_PT },
+         { "Microphone", OPTION_VAL_MICROPHONE_PT_PT },
          { "None",     OPTION_VAL_NONE_PT_PT },
          { NULL, NULL },
       },
@@ -69610,6 +69907,7 @@ struct retro_core_options_v2 options_pt_pt = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_RU "Выбор устройства, включенного в слот расширения A1 (порт А слот 1)."
 #define OPTION_VAL_VMU_RU NULL
 #define OPTION_VAL_PURUPURU_RU "Вибропак"
+#define OPTION_VAL_MICROPHONE_RU NULL
 #define OPTION_VAL_DREAMPOTATO_RU NULL
 #define OPTION_VAL_NONE_RU "Нет"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_RU "Устройство в слоте расширения A2"
@@ -70675,6 +70973,7 @@ struct retro_core_option_v2_definition option_defs_ru[] = {
       {
          { "VMU",      OPTION_VAL_VMU_RU },
          { "Purupuru", OPTION_VAL_PURUPURU_RU },
+         { "Microphone", OPTION_VAL_MICROPHONE_RU },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_RU },
          { "None",     OPTION_VAL_NONE_RU },
          { NULL, NULL },
@@ -70691,6 +70990,7 @@ struct retro_core_option_v2_definition option_defs_ru[] = {
       {
          { "VMU",      OPTION_VAL_VMU_RU },
          { "Purupuru", OPTION_VAL_PURUPURU_RU },
+         { "Microphone", OPTION_VAL_MICROPHONE_RU },
          { "None",     OPTION_VAL_NONE_RU },
          { NULL, NULL },
       },
@@ -70706,6 +71006,7 @@ struct retro_core_option_v2_definition option_defs_ru[] = {
       {
          { "VMU",      OPTION_VAL_VMU_RU },
          { "Purupuru", OPTION_VAL_PURUPURU_RU },
+         { "Microphone", OPTION_VAL_MICROPHONE_RU },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_RU },
          { "None",     OPTION_VAL_NONE_RU },
          { NULL, NULL },
@@ -70722,6 +71023,7 @@ struct retro_core_option_v2_definition option_defs_ru[] = {
       {
          { "VMU",      OPTION_VAL_VMU_RU },
          { "Purupuru", OPTION_VAL_PURUPURU_RU },
+         { "Microphone", OPTION_VAL_MICROPHONE_RU },
          { "None",     OPTION_VAL_NONE_RU },
          { NULL, NULL },
       },
@@ -70737,6 +71039,7 @@ struct retro_core_option_v2_definition option_defs_ru[] = {
       {
          { "VMU",      OPTION_VAL_VMU_RU },
          { "Purupuru", OPTION_VAL_PURUPURU_RU },
+         { "Microphone", OPTION_VAL_MICROPHONE_RU },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_RU },
          { "None",     OPTION_VAL_NONE_RU },
          { NULL, NULL },
@@ -70753,6 +71056,7 @@ struct retro_core_option_v2_definition option_defs_ru[] = {
       {
          { "VMU",      OPTION_VAL_VMU_RU },
          { "Purupuru", OPTION_VAL_PURUPURU_RU },
+         { "Microphone", OPTION_VAL_MICROPHONE_RU },
          { "None",     OPTION_VAL_NONE_RU },
          { NULL, NULL },
       },
@@ -70768,6 +71072,7 @@ struct retro_core_option_v2_definition option_defs_ru[] = {
       {
          { "VMU",      OPTION_VAL_VMU_RU },
          { "Purupuru", OPTION_VAL_PURUPURU_RU },
+         { "Microphone", OPTION_VAL_MICROPHONE_RU },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_RU },
          { "None",     OPTION_VAL_NONE_RU },
          { NULL, NULL },
@@ -70784,6 +71089,7 @@ struct retro_core_option_v2_definition option_defs_ru[] = {
       {
          { "VMU",      OPTION_VAL_VMU_RU },
          { "Purupuru", OPTION_VAL_PURUPURU_RU },
+         { "Microphone", OPTION_VAL_MICROPHONE_RU },
          { "None",     OPTION_VAL_NONE_RU },
          { NULL, NULL },
       },
@@ -71710,6 +72016,7 @@ struct retro_core_options_v2 options_ru = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_SK "Vyberte zariadenie pripojené v rozširujúcom slote A1 (port A slot 1)."
 #define OPTION_VAL_VMU_SK NULL
 #define OPTION_VAL_PURUPURU_SK "Vibračný balík"
+#define OPTION_VAL_MICROPHONE_SK NULL
 #define OPTION_VAL_DREAMPOTATO_SK NULL
 #define OPTION_VAL_NONE_SK "Žiadne"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_SK "Zariadenie v rozširujúcom slote A2"
@@ -72775,6 +73082,7 @@ struct retro_core_option_v2_definition option_defs_sk[] = {
       {
          { "VMU",      OPTION_VAL_VMU_SK },
          { "Purupuru", OPTION_VAL_PURUPURU_SK },
+         { "Microphone", OPTION_VAL_MICROPHONE_SK },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_SK },
          { "None",     OPTION_VAL_NONE_SK },
          { NULL, NULL },
@@ -72791,6 +73099,7 @@ struct retro_core_option_v2_definition option_defs_sk[] = {
       {
          { "VMU",      OPTION_VAL_VMU_SK },
          { "Purupuru", OPTION_VAL_PURUPURU_SK },
+         { "Microphone", OPTION_VAL_MICROPHONE_SK },
          { "None",     OPTION_VAL_NONE_SK },
          { NULL, NULL },
       },
@@ -72806,6 +73115,7 @@ struct retro_core_option_v2_definition option_defs_sk[] = {
       {
          { "VMU",      OPTION_VAL_VMU_SK },
          { "Purupuru", OPTION_VAL_PURUPURU_SK },
+         { "Microphone", OPTION_VAL_MICROPHONE_SK },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_SK },
          { "None",     OPTION_VAL_NONE_SK },
          { NULL, NULL },
@@ -72822,6 +73132,7 @@ struct retro_core_option_v2_definition option_defs_sk[] = {
       {
          { "VMU",      OPTION_VAL_VMU_SK },
          { "Purupuru", OPTION_VAL_PURUPURU_SK },
+         { "Microphone", OPTION_VAL_MICROPHONE_SK },
          { "None",     OPTION_VAL_NONE_SK },
          { NULL, NULL },
       },
@@ -72837,6 +73148,7 @@ struct retro_core_option_v2_definition option_defs_sk[] = {
       {
          { "VMU",      OPTION_VAL_VMU_SK },
          { "Purupuru", OPTION_VAL_PURUPURU_SK },
+         { "Microphone", OPTION_VAL_MICROPHONE_SK },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_SK },
          { "None",     OPTION_VAL_NONE_SK },
          { NULL, NULL },
@@ -72853,6 +73165,7 @@ struct retro_core_option_v2_definition option_defs_sk[] = {
       {
          { "VMU",      OPTION_VAL_VMU_SK },
          { "Purupuru", OPTION_VAL_PURUPURU_SK },
+         { "Microphone", OPTION_VAL_MICROPHONE_SK },
          { "None",     OPTION_VAL_NONE_SK },
          { NULL, NULL },
       },
@@ -72868,6 +73181,7 @@ struct retro_core_option_v2_definition option_defs_sk[] = {
       {
          { "VMU",      OPTION_VAL_VMU_SK },
          { "Purupuru", OPTION_VAL_PURUPURU_SK },
+         { "Microphone", OPTION_VAL_MICROPHONE_SK },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_SK },
          { "None",     OPTION_VAL_NONE_SK },
          { NULL, NULL },
@@ -72884,6 +73198,7 @@ struct retro_core_option_v2_definition option_defs_sk[] = {
       {
          { "VMU",      OPTION_VAL_VMU_SK },
          { "Purupuru", OPTION_VAL_PURUPURU_SK },
+         { "Microphone", OPTION_VAL_MICROPHONE_SK },
          { "None",     OPTION_VAL_NONE_SK },
          { NULL, NULL },
       },
@@ -73810,6 +74125,7 @@ struct retro_core_options_v2 options_sk = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_SR NULL
 #define OPTION_VAL_VMU_SR NULL
 #define OPTION_VAL_PURUPURU_SR NULL
+#define OPTION_VAL_MICROPHONE_SR NULL
 #define OPTION_VAL_DREAMPOTATO_SR NULL
 #define OPTION_VAL_NONE_SR NULL
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_SR NULL
@@ -74875,6 +75191,7 @@ struct retro_core_option_v2_definition option_defs_sr[] = {
       {
          { "VMU",      OPTION_VAL_VMU_SR },
          { "Purupuru", OPTION_VAL_PURUPURU_SR },
+         { "Microphone", OPTION_VAL_MICROPHONE_SR },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_SR },
          { "None",     OPTION_VAL_NONE_SR },
          { NULL, NULL },
@@ -74891,6 +75208,7 @@ struct retro_core_option_v2_definition option_defs_sr[] = {
       {
          { "VMU",      OPTION_VAL_VMU_SR },
          { "Purupuru", OPTION_VAL_PURUPURU_SR },
+         { "Microphone", OPTION_VAL_MICROPHONE_SR },
          { "None",     OPTION_VAL_NONE_SR },
          { NULL, NULL },
       },
@@ -74906,6 +75224,7 @@ struct retro_core_option_v2_definition option_defs_sr[] = {
       {
          { "VMU",      OPTION_VAL_VMU_SR },
          { "Purupuru", OPTION_VAL_PURUPURU_SR },
+         { "Microphone", OPTION_VAL_MICROPHONE_SR },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_SR },
          { "None",     OPTION_VAL_NONE_SR },
          { NULL, NULL },
@@ -74922,6 +75241,7 @@ struct retro_core_option_v2_definition option_defs_sr[] = {
       {
          { "VMU",      OPTION_VAL_VMU_SR },
          { "Purupuru", OPTION_VAL_PURUPURU_SR },
+         { "Microphone", OPTION_VAL_MICROPHONE_SR },
          { "None",     OPTION_VAL_NONE_SR },
          { NULL, NULL },
       },
@@ -74937,6 +75257,7 @@ struct retro_core_option_v2_definition option_defs_sr[] = {
       {
          { "VMU",      OPTION_VAL_VMU_SR },
          { "Purupuru", OPTION_VAL_PURUPURU_SR },
+         { "Microphone", OPTION_VAL_MICROPHONE_SR },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_SR },
          { "None",     OPTION_VAL_NONE_SR },
          { NULL, NULL },
@@ -74953,6 +75274,7 @@ struct retro_core_option_v2_definition option_defs_sr[] = {
       {
          { "VMU",      OPTION_VAL_VMU_SR },
          { "Purupuru", OPTION_VAL_PURUPURU_SR },
+         { "Microphone", OPTION_VAL_MICROPHONE_SR },
          { "None",     OPTION_VAL_NONE_SR },
          { NULL, NULL },
       },
@@ -74968,6 +75290,7 @@ struct retro_core_option_v2_definition option_defs_sr[] = {
       {
          { "VMU",      OPTION_VAL_VMU_SR },
          { "Purupuru", OPTION_VAL_PURUPURU_SR },
+         { "Microphone", OPTION_VAL_MICROPHONE_SR },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_SR },
          { "None",     OPTION_VAL_NONE_SR },
          { NULL, NULL },
@@ -74984,6 +75307,7 @@ struct retro_core_option_v2_definition option_defs_sr[] = {
       {
          { "VMU",      OPTION_VAL_VMU_SR },
          { "Purupuru", OPTION_VAL_PURUPURU_SR },
+         { "Microphone", OPTION_VAL_MICROPHONE_SR },
          { "None",     OPTION_VAL_NONE_SR },
          { NULL, NULL },
       },
@@ -75910,6 +76234,7 @@ struct retro_core_options_v2 options_sr = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_SV "Välj den enhet som är ansluten till expansionsfack A1 (port A plats 1)."
 #define OPTION_VAL_VMU_SV NULL
 #define OPTION_VAL_PURUPURU_SV "Vibrationspaket"
+#define OPTION_VAL_MICROPHONE_SV NULL
 #define OPTION_VAL_DREAMPOTATO_SV NULL
 #define OPTION_VAL_NONE_SV "Ingen"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_SV "Enhet i expansionsfack A2"
@@ -76975,6 +77300,7 @@ struct retro_core_option_v2_definition option_defs_sv[] = {
       {
          { "VMU",      OPTION_VAL_VMU_SV },
          { "Purupuru", OPTION_VAL_PURUPURU_SV },
+         { "Microphone", OPTION_VAL_MICROPHONE_SV },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_SV },
          { "None",     OPTION_VAL_NONE_SV },
          { NULL, NULL },
@@ -76991,6 +77317,7 @@ struct retro_core_option_v2_definition option_defs_sv[] = {
       {
          { "VMU",      OPTION_VAL_VMU_SV },
          { "Purupuru", OPTION_VAL_PURUPURU_SV },
+         { "Microphone", OPTION_VAL_MICROPHONE_SV },
          { "None",     OPTION_VAL_NONE_SV },
          { NULL, NULL },
       },
@@ -77006,6 +77333,7 @@ struct retro_core_option_v2_definition option_defs_sv[] = {
       {
          { "VMU",      OPTION_VAL_VMU_SV },
          { "Purupuru", OPTION_VAL_PURUPURU_SV },
+         { "Microphone", OPTION_VAL_MICROPHONE_SV },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_SV },
          { "None",     OPTION_VAL_NONE_SV },
          { NULL, NULL },
@@ -77022,6 +77350,7 @@ struct retro_core_option_v2_definition option_defs_sv[] = {
       {
          { "VMU",      OPTION_VAL_VMU_SV },
          { "Purupuru", OPTION_VAL_PURUPURU_SV },
+         { "Microphone", OPTION_VAL_MICROPHONE_SV },
          { "None",     OPTION_VAL_NONE_SV },
          { NULL, NULL },
       },
@@ -77037,6 +77366,7 @@ struct retro_core_option_v2_definition option_defs_sv[] = {
       {
          { "VMU",      OPTION_VAL_VMU_SV },
          { "Purupuru", OPTION_VAL_PURUPURU_SV },
+         { "Microphone", OPTION_VAL_MICROPHONE_SV },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_SV },
          { "None",     OPTION_VAL_NONE_SV },
          { NULL, NULL },
@@ -77053,6 +77383,7 @@ struct retro_core_option_v2_definition option_defs_sv[] = {
       {
          { "VMU",      OPTION_VAL_VMU_SV },
          { "Purupuru", OPTION_VAL_PURUPURU_SV },
+         { "Microphone", OPTION_VAL_MICROPHONE_SV },
          { "None",     OPTION_VAL_NONE_SV },
          { NULL, NULL },
       },
@@ -77068,6 +77399,7 @@ struct retro_core_option_v2_definition option_defs_sv[] = {
       {
          { "VMU",      OPTION_VAL_VMU_SV },
          { "Purupuru", OPTION_VAL_PURUPURU_SV },
+         { "Microphone", OPTION_VAL_MICROPHONE_SV },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_SV },
          { "None",     OPTION_VAL_NONE_SV },
          { NULL, NULL },
@@ -77084,6 +77416,7 @@ struct retro_core_option_v2_definition option_defs_sv[] = {
       {
          { "VMU",      OPTION_VAL_VMU_SV },
          { "Purupuru", OPTION_VAL_PURUPURU_SV },
+         { "Microphone", OPTION_VAL_MICROPHONE_SV },
          { "None",     OPTION_VAL_NONE_SV },
          { NULL, NULL },
       },
@@ -78010,6 +78343,7 @@ struct retro_core_options_v2 options_sv = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_TH "เลือกอุปกรณ์ที่เสียบอยู่ในช่องเสียบขยาย A1 (จอยพอร์ต A ช่องที่ 1)"
 #define OPTION_VAL_VMU_TH NULL
 #define OPTION_VAL_PURUPURU_TH "ชุดสั่น"
+#define OPTION_VAL_MICROPHONE_TH NULL
 #define OPTION_VAL_DREAMPOTATO_TH NULL
 #define OPTION_VAL_NONE_TH "ไม่แชร์อินพุต"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_TH "อุปกรณ์ในช่องเสียบขยาย A2"
@@ -79075,6 +79409,7 @@ struct retro_core_option_v2_definition option_defs_th[] = {
       {
          { "VMU",      OPTION_VAL_VMU_TH },
          { "Purupuru", OPTION_VAL_PURUPURU_TH },
+         { "Microphone", OPTION_VAL_MICROPHONE_TH },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_TH },
          { "None",     OPTION_VAL_NONE_TH },
          { NULL, NULL },
@@ -79091,6 +79426,7 @@ struct retro_core_option_v2_definition option_defs_th[] = {
       {
          { "VMU",      OPTION_VAL_VMU_TH },
          { "Purupuru", OPTION_VAL_PURUPURU_TH },
+         { "Microphone", OPTION_VAL_MICROPHONE_TH },
          { "None",     OPTION_VAL_NONE_TH },
          { NULL, NULL },
       },
@@ -79106,6 +79442,7 @@ struct retro_core_option_v2_definition option_defs_th[] = {
       {
          { "VMU",      OPTION_VAL_VMU_TH },
          { "Purupuru", OPTION_VAL_PURUPURU_TH },
+         { "Microphone", OPTION_VAL_MICROPHONE_TH },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_TH },
          { "None",     OPTION_VAL_NONE_TH },
          { NULL, NULL },
@@ -79122,6 +79459,7 @@ struct retro_core_option_v2_definition option_defs_th[] = {
       {
          { "VMU",      OPTION_VAL_VMU_TH },
          { "Purupuru", OPTION_VAL_PURUPURU_TH },
+         { "Microphone", OPTION_VAL_MICROPHONE_TH },
          { "None",     OPTION_VAL_NONE_TH },
          { NULL, NULL },
       },
@@ -79137,6 +79475,7 @@ struct retro_core_option_v2_definition option_defs_th[] = {
       {
          { "VMU",      OPTION_VAL_VMU_TH },
          { "Purupuru", OPTION_VAL_PURUPURU_TH },
+         { "Microphone", OPTION_VAL_MICROPHONE_TH },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_TH },
          { "None",     OPTION_VAL_NONE_TH },
          { NULL, NULL },
@@ -79153,6 +79492,7 @@ struct retro_core_option_v2_definition option_defs_th[] = {
       {
          { "VMU",      OPTION_VAL_VMU_TH },
          { "Purupuru", OPTION_VAL_PURUPURU_TH },
+         { "Microphone", OPTION_VAL_MICROPHONE_TH },
          { "None",     OPTION_VAL_NONE_TH },
          { NULL, NULL },
       },
@@ -79168,6 +79508,7 @@ struct retro_core_option_v2_definition option_defs_th[] = {
       {
          { "VMU",      OPTION_VAL_VMU_TH },
          { "Purupuru", OPTION_VAL_PURUPURU_TH },
+         { "Microphone", OPTION_VAL_MICROPHONE_TH },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_TH },
          { "None",     OPTION_VAL_NONE_TH },
          { NULL, NULL },
@@ -79184,6 +79525,7 @@ struct retro_core_option_v2_definition option_defs_th[] = {
       {
          { "VMU",      OPTION_VAL_VMU_TH },
          { "Purupuru", OPTION_VAL_PURUPURU_TH },
+         { "Microphone", OPTION_VAL_MICROPHONE_TH },
          { "None",     OPTION_VAL_NONE_TH },
          { NULL, NULL },
       },
@@ -80110,6 +80452,7 @@ struct retro_core_options_v2 options_th = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_TR "Genişletme yuvası A1 için takılı cihazı seçin (port A yuva 1)."
 #define OPTION_VAL_VMU_TR NULL
 #define OPTION_VAL_PURUPURU_TR "Titreşim Paketi"
+#define OPTION_VAL_MICROPHONE_TR NULL
 #define OPTION_VAL_DREAMPOTATO_TR NULL
 #define OPTION_VAL_NONE_TR "Yok"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_TR "Genişletme Yuvası Cihaz A2"
@@ -81175,6 +81518,7 @@ struct retro_core_option_v2_definition option_defs_tr[] = {
       {
          { "VMU",      OPTION_VAL_VMU_TR },
          { "Purupuru", OPTION_VAL_PURUPURU_TR },
+         { "Microphone", OPTION_VAL_MICROPHONE_TR },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_TR },
          { "None",     OPTION_VAL_NONE_TR },
          { NULL, NULL },
@@ -81191,6 +81535,7 @@ struct retro_core_option_v2_definition option_defs_tr[] = {
       {
          { "VMU",      OPTION_VAL_VMU_TR },
          { "Purupuru", OPTION_VAL_PURUPURU_TR },
+         { "Microphone", OPTION_VAL_MICROPHONE_TR },
          { "None",     OPTION_VAL_NONE_TR },
          { NULL, NULL },
       },
@@ -81206,6 +81551,7 @@ struct retro_core_option_v2_definition option_defs_tr[] = {
       {
          { "VMU",      OPTION_VAL_VMU_TR },
          { "Purupuru", OPTION_VAL_PURUPURU_TR },
+         { "Microphone", OPTION_VAL_MICROPHONE_TR },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_TR },
          { "None",     OPTION_VAL_NONE_TR },
          { NULL, NULL },
@@ -81222,6 +81568,7 @@ struct retro_core_option_v2_definition option_defs_tr[] = {
       {
          { "VMU",      OPTION_VAL_VMU_TR },
          { "Purupuru", OPTION_VAL_PURUPURU_TR },
+         { "Microphone", OPTION_VAL_MICROPHONE_TR },
          { "None",     OPTION_VAL_NONE_TR },
          { NULL, NULL },
       },
@@ -81237,6 +81584,7 @@ struct retro_core_option_v2_definition option_defs_tr[] = {
       {
          { "VMU",      OPTION_VAL_VMU_TR },
          { "Purupuru", OPTION_VAL_PURUPURU_TR },
+         { "Microphone", OPTION_VAL_MICROPHONE_TR },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_TR },
          { "None",     OPTION_VAL_NONE_TR },
          { NULL, NULL },
@@ -81253,6 +81601,7 @@ struct retro_core_option_v2_definition option_defs_tr[] = {
       {
          { "VMU",      OPTION_VAL_VMU_TR },
          { "Purupuru", OPTION_VAL_PURUPURU_TR },
+         { "Microphone", OPTION_VAL_MICROPHONE_TR },
          { "None",     OPTION_VAL_NONE_TR },
          { NULL, NULL },
       },
@@ -81268,6 +81617,7 @@ struct retro_core_option_v2_definition option_defs_tr[] = {
       {
          { "VMU",      OPTION_VAL_VMU_TR },
          { "Purupuru", OPTION_VAL_PURUPURU_TR },
+         { "Microphone", OPTION_VAL_MICROPHONE_TR },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_TR },
          { "None",     OPTION_VAL_NONE_TR },
          { NULL, NULL },
@@ -81284,6 +81634,7 @@ struct retro_core_option_v2_definition option_defs_tr[] = {
       {
          { "VMU",      OPTION_VAL_VMU_TR },
          { "Purupuru", OPTION_VAL_PURUPURU_TR },
+         { "Microphone", OPTION_VAL_MICROPHONE_TR },
          { "None",     OPTION_VAL_NONE_TR },
          { NULL, NULL },
       },
@@ -82210,6 +82561,7 @@ struct retro_core_options_v2 options_tr = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_TT NULL
 #define OPTION_VAL_VMU_TT NULL
 #define OPTION_VAL_PURUPURU_TT NULL
+#define OPTION_VAL_MICROPHONE_TT NULL
 #define OPTION_VAL_DREAMPOTATO_TT NULL
 #define OPTION_VAL_NONE_TT NULL
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_TT NULL
@@ -83275,6 +83627,7 @@ struct retro_core_option_v2_definition option_defs_tt[] = {
       {
          { "VMU",      OPTION_VAL_VMU_TT },
          { "Purupuru", OPTION_VAL_PURUPURU_TT },
+         { "Microphone", OPTION_VAL_MICROPHONE_TT },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_TT },
          { "None",     OPTION_VAL_NONE_TT },
          { NULL, NULL },
@@ -83291,6 +83644,7 @@ struct retro_core_option_v2_definition option_defs_tt[] = {
       {
          { "VMU",      OPTION_VAL_VMU_TT },
          { "Purupuru", OPTION_VAL_PURUPURU_TT },
+         { "Microphone", OPTION_VAL_MICROPHONE_TT },
          { "None",     OPTION_VAL_NONE_TT },
          { NULL, NULL },
       },
@@ -83306,6 +83660,7 @@ struct retro_core_option_v2_definition option_defs_tt[] = {
       {
          { "VMU",      OPTION_VAL_VMU_TT },
          { "Purupuru", OPTION_VAL_PURUPURU_TT },
+         { "Microphone", OPTION_VAL_MICROPHONE_TT },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_TT },
          { "None",     OPTION_VAL_NONE_TT },
          { NULL, NULL },
@@ -83322,6 +83677,7 @@ struct retro_core_option_v2_definition option_defs_tt[] = {
       {
          { "VMU",      OPTION_VAL_VMU_TT },
          { "Purupuru", OPTION_VAL_PURUPURU_TT },
+         { "Microphone", OPTION_VAL_MICROPHONE_TT },
          { "None",     OPTION_VAL_NONE_TT },
          { NULL, NULL },
       },
@@ -83337,6 +83693,7 @@ struct retro_core_option_v2_definition option_defs_tt[] = {
       {
          { "VMU",      OPTION_VAL_VMU_TT },
          { "Purupuru", OPTION_VAL_PURUPURU_TT },
+         { "Microphone", OPTION_VAL_MICROPHONE_TT },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_TT },
          { "None",     OPTION_VAL_NONE_TT },
          { NULL, NULL },
@@ -83353,6 +83710,7 @@ struct retro_core_option_v2_definition option_defs_tt[] = {
       {
          { "VMU",      OPTION_VAL_VMU_TT },
          { "Purupuru", OPTION_VAL_PURUPURU_TT },
+         { "Microphone", OPTION_VAL_MICROPHONE_TT },
          { "None",     OPTION_VAL_NONE_TT },
          { NULL, NULL },
       },
@@ -83368,6 +83726,7 @@ struct retro_core_option_v2_definition option_defs_tt[] = {
       {
          { "VMU",      OPTION_VAL_VMU_TT },
          { "Purupuru", OPTION_VAL_PURUPURU_TT },
+         { "Microphone", OPTION_VAL_MICROPHONE_TT },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_TT },
          { "None",     OPTION_VAL_NONE_TT },
          { NULL, NULL },
@@ -83384,6 +83743,7 @@ struct retro_core_option_v2_definition option_defs_tt[] = {
       {
          { "VMU",      OPTION_VAL_VMU_TT },
          { "Purupuru", OPTION_VAL_PURUPURU_TT },
+         { "Microphone", OPTION_VAL_MICROPHONE_TT },
          { "None",     OPTION_VAL_NONE_TT },
          { NULL, NULL },
       },
@@ -84310,6 +84670,7 @@ struct retro_core_options_v2 options_tt = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_UK "Виберіть пристрій підключений до слоту розширення A1 (порт A слот 1)."
 #define OPTION_VAL_VMU_UK "ВМУ"
 #define OPTION_VAL_PURUPURU_UK "Пакунок Вібрації"
+#define OPTION_VAL_MICROPHONE_UK NULL
 #define OPTION_VAL_DREAMPOTATO_UK NULL
 #define OPTION_VAL_NONE_UK "Немає"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_UK "Пристрій у слоті розширення A2"
@@ -85375,6 +85736,7 @@ struct retro_core_option_v2_definition option_defs_uk[] = {
       {
          { "VMU",      OPTION_VAL_VMU_UK },
          { "Purupuru", OPTION_VAL_PURUPURU_UK },
+         { "Microphone", OPTION_VAL_MICROPHONE_UK },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_UK },
          { "None",     OPTION_VAL_NONE_UK },
          { NULL, NULL },
@@ -85391,6 +85753,7 @@ struct retro_core_option_v2_definition option_defs_uk[] = {
       {
          { "VMU",      OPTION_VAL_VMU_UK },
          { "Purupuru", OPTION_VAL_PURUPURU_UK },
+         { "Microphone", OPTION_VAL_MICROPHONE_UK },
          { "None",     OPTION_VAL_NONE_UK },
          { NULL, NULL },
       },
@@ -85406,6 +85769,7 @@ struct retro_core_option_v2_definition option_defs_uk[] = {
       {
          { "VMU",      OPTION_VAL_VMU_UK },
          { "Purupuru", OPTION_VAL_PURUPURU_UK },
+         { "Microphone", OPTION_VAL_MICROPHONE_UK },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_UK },
          { "None",     OPTION_VAL_NONE_UK },
          { NULL, NULL },
@@ -85422,6 +85786,7 @@ struct retro_core_option_v2_definition option_defs_uk[] = {
       {
          { "VMU",      OPTION_VAL_VMU_UK },
          { "Purupuru", OPTION_VAL_PURUPURU_UK },
+         { "Microphone", OPTION_VAL_MICROPHONE_UK },
          { "None",     OPTION_VAL_NONE_UK },
          { NULL, NULL },
       },
@@ -85437,6 +85802,7 @@ struct retro_core_option_v2_definition option_defs_uk[] = {
       {
          { "VMU",      OPTION_VAL_VMU_UK },
          { "Purupuru", OPTION_VAL_PURUPURU_UK },
+         { "Microphone", OPTION_VAL_MICROPHONE_UK },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_UK },
          { "None",     OPTION_VAL_NONE_UK },
          { NULL, NULL },
@@ -85453,6 +85819,7 @@ struct retro_core_option_v2_definition option_defs_uk[] = {
       {
          { "VMU",      OPTION_VAL_VMU_UK },
          { "Purupuru", OPTION_VAL_PURUPURU_UK },
+         { "Microphone", OPTION_VAL_MICROPHONE_UK },
          { "None",     OPTION_VAL_NONE_UK },
          { NULL, NULL },
       },
@@ -85468,6 +85835,7 @@ struct retro_core_option_v2_definition option_defs_uk[] = {
       {
          { "VMU",      OPTION_VAL_VMU_UK },
          { "Purupuru", OPTION_VAL_PURUPURU_UK },
+         { "Microphone", OPTION_VAL_MICROPHONE_UK },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_UK },
          { "None",     OPTION_VAL_NONE_UK },
          { NULL, NULL },
@@ -85484,6 +85852,7 @@ struct retro_core_option_v2_definition option_defs_uk[] = {
       {
          { "VMU",      OPTION_VAL_VMU_UK },
          { "Purupuru", OPTION_VAL_PURUPURU_UK },
+         { "Microphone", OPTION_VAL_MICROPHONE_UK },
          { "None",     OPTION_VAL_NONE_UK },
          { NULL, NULL },
       },
@@ -86410,6 +86779,7 @@ struct retro_core_options_v2 options_uk = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_VAL NULL
 #define OPTION_VAL_VMU_VAL NULL
 #define OPTION_VAL_PURUPURU_VAL NULL
+#define OPTION_VAL_MICROPHONE_VAL NULL
 #define OPTION_VAL_DREAMPOTATO_VAL NULL
 #define OPTION_VAL_NONE_VAL "Cap"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_VAL NULL
@@ -87475,6 +87845,7 @@ struct retro_core_option_v2_definition option_defs_val[] = {
       {
          { "VMU",      OPTION_VAL_VMU_VAL },
          { "Purupuru", OPTION_VAL_PURUPURU_VAL },
+         { "Microphone", OPTION_VAL_MICROPHONE_VAL },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_VAL },
          { "None",     OPTION_VAL_NONE_VAL },
          { NULL, NULL },
@@ -87491,6 +87862,7 @@ struct retro_core_option_v2_definition option_defs_val[] = {
       {
          { "VMU",      OPTION_VAL_VMU_VAL },
          { "Purupuru", OPTION_VAL_PURUPURU_VAL },
+         { "Microphone", OPTION_VAL_MICROPHONE_VAL },
          { "None",     OPTION_VAL_NONE_VAL },
          { NULL, NULL },
       },
@@ -87506,6 +87878,7 @@ struct retro_core_option_v2_definition option_defs_val[] = {
       {
          { "VMU",      OPTION_VAL_VMU_VAL },
          { "Purupuru", OPTION_VAL_PURUPURU_VAL },
+         { "Microphone", OPTION_VAL_MICROPHONE_VAL },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_VAL },
          { "None",     OPTION_VAL_NONE_VAL },
          { NULL, NULL },
@@ -87522,6 +87895,7 @@ struct retro_core_option_v2_definition option_defs_val[] = {
       {
          { "VMU",      OPTION_VAL_VMU_VAL },
          { "Purupuru", OPTION_VAL_PURUPURU_VAL },
+         { "Microphone", OPTION_VAL_MICROPHONE_VAL },
          { "None",     OPTION_VAL_NONE_VAL },
          { NULL, NULL },
       },
@@ -87537,6 +87911,7 @@ struct retro_core_option_v2_definition option_defs_val[] = {
       {
          { "VMU",      OPTION_VAL_VMU_VAL },
          { "Purupuru", OPTION_VAL_PURUPURU_VAL },
+         { "Microphone", OPTION_VAL_MICROPHONE_VAL },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_VAL },
          { "None",     OPTION_VAL_NONE_VAL },
          { NULL, NULL },
@@ -87553,6 +87928,7 @@ struct retro_core_option_v2_definition option_defs_val[] = {
       {
          { "VMU",      OPTION_VAL_VMU_VAL },
          { "Purupuru", OPTION_VAL_PURUPURU_VAL },
+         { "Microphone", OPTION_VAL_MICROPHONE_VAL },
          { "None",     OPTION_VAL_NONE_VAL },
          { NULL, NULL },
       },
@@ -87568,6 +87944,7 @@ struct retro_core_option_v2_definition option_defs_val[] = {
       {
          { "VMU",      OPTION_VAL_VMU_VAL },
          { "Purupuru", OPTION_VAL_PURUPURU_VAL },
+         { "Microphone", OPTION_VAL_MICROPHONE_VAL },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_VAL },
          { "None",     OPTION_VAL_NONE_VAL },
          { NULL, NULL },
@@ -87584,6 +87961,7 @@ struct retro_core_option_v2_definition option_defs_val[] = {
       {
          { "VMU",      OPTION_VAL_VMU_VAL },
          { "Purupuru", OPTION_VAL_PURUPURU_VAL },
+         { "Microphone", OPTION_VAL_MICROPHONE_VAL },
          { "None",     OPTION_VAL_NONE_VAL },
          { NULL, NULL },
       },
@@ -88510,6 +88888,7 @@ struct retro_core_options_v2 options_val = {
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT1_INFO_0_VN "Chọn thiết bị cắm ở khe mở rộng A1 (cổng A, khe 1)."
 #define OPTION_VAL_VMU_VN NULL
 #define OPTION_VAL_PURUPURU_VN "Gói rung tay cầm"
+#define OPTION_VAL_MICROPHONE_VN NULL
 #define OPTION_VAL_DREAMPOTATO_VN NULL
 #define OPTION_VAL_NONE_VN "Không"
 #define CORE_OPTION_NAME_DEVICE_PORT1_SLOT2_LABEL_VN "Thiết bị trong khe mở rộng A2"
@@ -89575,6 +89954,7 @@ struct retro_core_option_v2_definition option_defs_vn[] = {
       {
          { "VMU",      OPTION_VAL_VMU_VN },
          { "Purupuru", OPTION_VAL_PURUPURU_VN },
+         { "Microphone", OPTION_VAL_MICROPHONE_VN },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_VN },
          { "None",     OPTION_VAL_NONE_VN },
          { NULL, NULL },
@@ -89591,6 +89971,7 @@ struct retro_core_option_v2_definition option_defs_vn[] = {
       {
          { "VMU",      OPTION_VAL_VMU_VN },
          { "Purupuru", OPTION_VAL_PURUPURU_VN },
+         { "Microphone", OPTION_VAL_MICROPHONE_VN },
          { "None",     OPTION_VAL_NONE_VN },
          { NULL, NULL },
       },
@@ -89606,6 +89987,7 @@ struct retro_core_option_v2_definition option_defs_vn[] = {
       {
          { "VMU",      OPTION_VAL_VMU_VN },
          { "Purupuru", OPTION_VAL_PURUPURU_VN },
+         { "Microphone", OPTION_VAL_MICROPHONE_VN },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_VN },
          { "None",     OPTION_VAL_NONE_VN },
          { NULL, NULL },
@@ -89622,6 +90004,7 @@ struct retro_core_option_v2_definition option_defs_vn[] = {
       {
          { "VMU",      OPTION_VAL_VMU_VN },
          { "Purupuru", OPTION_VAL_PURUPURU_VN },
+         { "Microphone", OPTION_VAL_MICROPHONE_VN },
          { "None",     OPTION_VAL_NONE_VN },
          { NULL, NULL },
       },
@@ -89637,6 +90020,7 @@ struct retro_core_option_v2_definition option_defs_vn[] = {
       {
          { "VMU",      OPTION_VAL_VMU_VN },
          { "Purupuru", OPTION_VAL_PURUPURU_VN },
+         { "Microphone", OPTION_VAL_MICROPHONE_VN },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_VN },
          { "None",     OPTION_VAL_NONE_VN },
          { NULL, NULL },
@@ -89653,6 +90037,7 @@ struct retro_core_option_v2_definition option_defs_vn[] = {
       {
          { "VMU",      OPTION_VAL_VMU_VN },
          { "Purupuru", OPTION_VAL_PURUPURU_VN },
+         { "Microphone", OPTION_VAL_MICROPHONE_VN },
          { "None",     OPTION_VAL_NONE_VN },
          { NULL, NULL },
       },
@@ -89668,6 +90053,7 @@ struct retro_core_option_v2_definition option_defs_vn[] = {
       {
          { "VMU",      OPTION_VAL_VMU_VN },
          { "Purupuru", OPTION_VAL_PURUPURU_VN },
+         { "Microphone", OPTION_VAL_MICROPHONE_VN },
          { "DreamPotato", OPTION_VAL_DREAMPOTATO_VN },
          { "None",     OPTION_VAL_NONE_VN },
          { NULL, NULL },
@@ -89684,6 +90070,7 @@ struct retro_core_option_v2_definition option_defs_vn[] = {
       {
          { "VMU",      OPTION_VAL_VMU_VN },
          { "Purupuru", OPTION_VAL_PURUPURU_VN },
+         { "Microphone", OPTION_VAL_MICROPHONE_VN },
          { "None",     OPTION_VAL_NONE_VN },
          { NULL, NULL },
       },

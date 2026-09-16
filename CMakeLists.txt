@@ -978,6 +978,11 @@ if(LIBRETRO)
 		shell/libretro/libretro.cpp
 		shell/libretro/LogManager.cpp
 		shell/libretro/LogManager.h
+		shell/libretro/microphone.cpp
+		shell/libretro/microphone.h
+		shell/libretro/MicrophoneInterface.h
+		shell/libretro/MicrophoneQueue.h
+		shell/libretro/MicrophoneResampler.h
 		shell/libretro/option.cpp
 		shell/libretro/oslib.cpp
 		shell/libretro/storage.cpp

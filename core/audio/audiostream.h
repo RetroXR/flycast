@@ -80,14 +80,17 @@ class RingBuffer
 	std::atomic_int readCursor { 0 };
 	std::atomic_int writeCursor { 0 };
 
-	u32 readSize() {
-		return (u32)((writeCursor - readCursor + buffer.size()) % buffer.size());
-	}
 	u32 writeSize() {
 		return (u32)((readCursor - writeCursor + buffer.size() - 1) % buffer.size());
 	}
 
 public:
+	/* Public so the consumer can bound its own latency. Safe for the reader to
+	 * ask: a concurrent write can only make the answer larger. */
+	u32 readSize() {
+		return (u32)((writeCursor - readCursor + buffer.size()) % buffer.size());
+	}
+
 	bool write(const u8 *data, u32 size)
 	{
 		if (size > writeSize())

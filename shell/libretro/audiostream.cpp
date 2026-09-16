@@ -298,15 +298,6 @@ void TermAudio()
 {
 }
 
-void StartAudioRecording(bool eight_khz)
-{
-}
-
-u32 RecordAudio(void *buffer, u32 samples)
-{
-	return 0;
-}
-
-void StopAudioRecording()
-{
-}
+/* The three recording functions live in microphone.cpp: they are the emulation
+ * thread's end of a queue the retro_run thread fills, which is a different
+ * subject from the main stream above. */

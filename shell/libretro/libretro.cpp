@@ -64,6 +64,7 @@
 #include "cheats.h"
 #include "rend/osd.h"
 #include "ControllerAudioInterface.h"
+#include "microphone.h"
 #include "ControllerDisplayInterface.h"
 #include "cfg/option.h"
 #include "version.h"
@@ -446,6 +447,7 @@ void retro_init()
 	init_disk_control_interface();
 	retro_audio_init();
 	probe_controller_interfaces();
+	mic_probe();
 
 #if defined(__APPLE__)
     char *data_dir = NULL;
@@ -477,6 +479,7 @@ void retro_init()
 void retro_deinit()
 {
 	INFO_LOG(COMMON, "retro_deinit");
+	mic_shutdown();
 	first_run = true;
 	memset(device_type, -1, sizeof(device_type));
 
@@ -1114,6 +1117,8 @@ static void update_variables(bool first_startup)
 							config::MapleExpansionDevices[i][slot] = MDT_SegaVMU;
 						else if (!strcmp("Purupuru", var.value))
 							config::MapleExpansionDevices[i][slot] = MDT_PurupuruPack;
+						else if (!strcmp("Microphone", var.value))
+							config::MapleExpansionDevices[i][slot] = MDT_Microphone;
 						else if (!strcmp("None", var.value))
 							config::MapleExpansionDevices[i][slot] = MDT_None;
 						else if (!strcmp("DreamPotato", var.value)) {
@@ -1389,6 +1394,11 @@ void retro_run()
 
 	video_cb(is_dupe ? 0 : RETRO_HW_FRAME_BUFFER_VALID, framebufferWidth, framebufferHeight, 0);
 
+	/* Outside the branch below: that one is skipped whenever the renderer is
+	 * threaded and the frame rate is not limited, which is the common case, and
+	 * the microphone has to be pumped on every frame. */
+	mic_pump();
+
 	if (!config::ThreadedRendering || config::LimitFPS)
 		retro_audio_upload();
 	else
@@ -1415,6 +1425,7 @@ void retro_reset()
 {
 	std::lock_guard<std::mutex> lock(mtx_serialization);
 
+	mic_flush();
 	emu.unloadGame();
 
 	config::ScreenStretching = 100;
@@ -2489,6 +2500,7 @@ bool retro_load_game_special(unsigned game_type, const struct retro_game_info *i
 void retro_unload_game()
 {
 	INFO_LOG(COMMON, "Flycast unloading game");
+	mic_shutdown();
 	emu.unloadGame();
 	dreampotato::term();
 	game_data.clear();
@@ -2578,6 +2590,9 @@ bool retro_unserialize(const void * data, size_t size)
 		Deserializer deser(data, size);
 		emu.loadstate(deser);
 	    retro_audio_flush_buffer();
+	    /* The restored device may re-issue StartAudioRecording; whatever is
+	     * queued belongs to before the state was saved. */
+	    mic_flush();
 		if (!first_run)
 			emu.start();
 
