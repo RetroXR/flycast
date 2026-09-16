@@ -130,7 +130,10 @@ static void openHandle(unsigned deviceRate)
 	silence_logged = false;
 	open_failed_logged = false;
 	stream_live.store(true, std::memory_order_release);
-	INFO_LOG(AUDIO, "microphone: open, %u Hz from the frontend -> %u Hz for the game, %d taps",
+	/* A warning rather than info, and once per session: frontends routinely
+	 * drop everything below warn, and this line is the only way to tell a
+	 * microphone the game is really using from one it merely asked for. */
+	WARN_LOG(AUDIO, "microphone: open, %u Hz from the frontend -> %u Hz for the game, %d taps",
 			host_rate, deviceRate, (int)decimator.tapCount());
 }
 
