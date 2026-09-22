@@ -1,15 +1,21 @@
-# Build the retroXR flycast core for Windows and Android and publish it as a
-# release, so retroXR's CoreDownloadManager can fetch it.
+# Build the retroXR flycast core for Windows, Android, Linux and macOS and
+# publish it as a release, so retroXR's CoreDownloadManager can fetch it.
 #
 # This fork hands each VMU's LCD and beep to a frontend that answers two private
 # environment calls, the controller display and controller audio interfaces,
-# instead of drawing the screen over the game and mixing the beep into it.
+# instead of drawing the screen over the game and mixing the beep into it. It
+# also feeds the Dreamcast microphone (HKT-7200) from the libretro microphone
+# interface, where the stock core's recording calls were empty stubs.
 #
 #   Windows  flycast_libretro.dll.zip          containing flycast_libretro.dll
 #   Android  flycast_libretro_android.so.zip   containing flycast_libretro_android.so
+#   Linux    flycast_libretro.so.zip           containing flycast_libretro.so
+#   macOS    flycast_libretro_arm64.dylib.zip
+#            flycast_libretro_x86_64.dylib.zip
+#                                              each containing flycast_libretro.dylib
 #
 # flycast is CMake-only -- there is no libretro/Makefile as in snes9x or mGBA --
-# so both jobs configure and build rather than calling make with a platform. The
+# so every job configures and builds rather than calling make with a platform. The
 # Windows recipe is lifted from this repo's own c-cpp.yml, which builds
 # libretro-x86_64-w64-mingw32 under msys2 rather than with MSVC.
 #
@@ -126,9 +132,111 @@ jobs:
           path: flycast_libretro_android.so.zip
           if-no-files-found: error
 
+  # The oldest Ubuntu runner: a shared library loads only against a glibc at
+  # least as new as the one it was linked with. The flags are upstream's own
+  # libretro-x86_64-pc-linux-gnu row in c-cpp.yml, less -DUSE_LIBCDIO=ON: that
+  # would put a DT_NEEDED on this runner's libcdio.so.19, which a player's
+  # distro need not have, for physical CD drives nobody in a headset reads.
+  linux:
+    name: Linux x86_64
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ninja-build zip libgl1-mesa-dev
+
+      - uses: actions/checkout@v6
+        with:
+          submodules: recursive
+          ref: ${{ github.event.inputs.ref || github.ref }}
+
+      - name: Build
+        run: |
+          cmake -B build -G Ninja -DLIBRETRO=ON -DCMAKE_BUILD_TYPE=Release \
+            -DCMAKE_POSITION_INDEPENDENT_CODE=TRUE
+          cmake --build build -j $(nproc)
+
+      - name: Package
+        run: |
+          mapfile -t hits < <(find build -maxdepth 2 -name 'flycast_libretro.so' -type f)
+          if [ "${#hits[@]}" -ne 1 ]; then
+            echo "expected exactly one flycast_libretro.so, found ${#hits[@]}:"
+            printf '  %s\n' "${hits[@]}"
+            exit 1
+          fi
+          mkdir -p stage
+          cp "${hits[0]}" stage/flycast_libretro.so
+          readelf -d stage/flycast_libretro.so | grep NEEDED
+          (cd stage && zip -q -X ../flycast_libretro.so.zip flycast_libretro.so)
+          file stage/flycast_libretro.so
+          ls -lh flycast_libretro.so.zip
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: linux
+          path: flycast_libretro.so.zip
+          if-no-files-found: error
+
+  # Both architectures on one Apple Silicon runner. CMakeLists.txt defaults
+  # CMAKE_OSX_ARCHITECTURES to a universal x86_64;arm64 build, so each leg names
+  # its own; the deployment target stays at that file's 10.15. OpenMP is off
+  # because CMakeLists.txt goes looking for Homebrew's libomp, and a core that
+  # found it would load a dylib from /opt/homebrew that no player's Mac has.
+  # (The macOS bash is 3.2, so no mapfile.)
+  macos:
+    name: macOS ${{ matrix.arch }}
+    runs-on: macos-14
+    strategy:
+      matrix:
+        arch: [arm64, x86_64]
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          submodules: recursive
+          ref: ${{ github.event.inputs.ref || github.ref }}
+
+      - name: Build
+        run: |
+          command -v ninja >/dev/null || brew install ninja
+          cmake -B build -G Ninja -DLIBRETRO=ON -DCMAKE_BUILD_TYPE=Release \
+            -DUSE_OPENMP=OFF -DCMAKE_OSX_ARCHITECTURES=${{ matrix.arch }}
+          cmake --build build -j $(sysctl -n hw.ncpu)
+
+      - name: Package
+        run: |
+          lib=flycast_libretro.dylib
+          hits=()
+          while IFS= read -r f; do hits+=("$f"); done < <(find build -maxdepth 2 -name "$lib" -type f)
+          if [ "${#hits[@]}" -ne 1 ]; then
+            echo "expected exactly one $lib, found ${#hits[@]}:"
+            printf '  %s\n' "${hits[@]}"
+            exit 1
+          fi
+          mkdir -p stage
+          cp "${hits[0]}" "stage/$lib"
+          lipo -info "stage/$lib"
+          if [ "$(lipo -archs "stage/$lib")" != "${{ matrix.arch }}" ]; then
+            echo "$lib is not ${{ matrix.arch }}"
+            exit 1
+          fi
+          otool -L "stage/$lib"
+          if otool -L "stage/$lib" | grep -Eq '/opt/homebrew|/usr/local'; then
+            echo "$lib links a Homebrew library"
+            exit 1
+          fi
+          (cd stage && zip -q -X ../flycast_libretro_${{ matrix.arch }}.dylib.zip "$lib")
+          ls -lh flycast_libretro_${{ matrix.arch }}.dylib.zip
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: macos-${{ matrix.arch }}
+          path: flycast_libretro_${{ matrix.arch }}.dylib.zip
+          if-no-files-found: error
+
   publish:
     name: Publish release
-    needs: [windows, android]
+    needs: [windows, android, linux, macos]
     if: github.event_name == 'push' || github.event.inputs.tag != ''
     runs-on: ubuntu-latest
     permissions:
@@ -148,8 +256,8 @@ jobs:
           cat > notes.md <<'NOTES'
           flycast libretro core built for retroXR.
 
-          Windows x86_64 and Android arm64-v8a. The source for these binaries is
-          this tag. flycast is GPLv2.
+          Windows x86_64, Android arm64-v8a, Linux x86_64 and macOS arm64 and
+          x86_64. The source for these binaries is this tag. flycast is GPLv2.
 
           Over the stock buildbot build:
 
@@ -159,6 +267,10 @@ jobs:
           * Each VMU's beep is handed over through the controller audio
             interface, so a frontend can play it from the card. Without it the
             beeps are mixed into the main stream as before.
+          * The Dreamcast microphone (HKT-7200), which Seaman needs, is fed
+            from the frontend's libretro microphone interface. The stock
+            core's recording calls were empty stubs, so the device reported
+            no samples. It fits either expansion slot.
           * The libretro build links libandroid, without which the dynarec
             crashed on its first memory access on Android.
           NOTES
@@ -171,4 +283,7 @@ jobs:
           gh release upload "$TAG" \
             dist/flycast_libretro.dll.zip \
             dist/flycast_libretro_android.so.zip \
+            dist/flycast_libretro.so.zip \
+            dist/flycast_libretro_arm64.dylib.zip \
+            dist/flycast_libretro_x86_64.dylib.zip \
             --repo "$GITHUB_REPOSITORY" --clobber
