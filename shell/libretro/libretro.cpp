@@ -66,6 +66,7 @@
 #include "ControllerAudioInterface.h"
 #include "microphone.h"
 #include "ControllerDisplayInterface.h"
+#include "DeviceDisplayInterface.h"
 #include "cfg/option.h"
 #include "version.h"
 #include "oslib/oslib.h"
@@ -362,8 +363,13 @@ void retro_set_environment(retro_environment_t cb)
 			led_state_cb = led_interface.set_led_state;
 }
 
-// VMU screens and beeps, handed to a frontend that answers these private
-// environment calls instead of being drawn over the game and mixed into it.
+// VMU screens and beeps, handed to a frontend that answers these environment
+// calls instead of being drawn over the game and mixed into it. Screens go through
+// the device display interface (97), shared with the PlayStation's PocketStation;
+// the older private controller display call is the fallback for a frontend that
+// predates it.
+static retro_device_display_interface device_display;
+static bool device_display_ok;
 static retro_controller_display_interface controller_display;
 static bool controller_display_ok;
 static retro_controller_audio_interface controller_audio;
@@ -371,21 +377,27 @@ static bool controller_audio_ok;
 
 static void probe_controller_interfaces()
 {
+	device_display = {};
+	device_display_ok = (environ_cb(RETRO_ENVIRONMENT_GET_DEVICE_DISPLAY_INTERFACE, &device_display)
+			|| environ_cb(RETRO_ENVIRONMENT_GET_DEVICE_DISPLAY_INTERFACE_FINAL, &device_display))
+		&& device_display.interface_version >= 1 && device_display.refresh != nullptr;
 	controller_display = {};
-	controller_display_ok = environ_cb(RETRO_ENVIRONMENT_GET_CONTROLLER_DISPLAY_INTERFACE, &controller_display)
+	controller_display_ok = !device_display_ok
+		&& environ_cb(RETRO_ENVIRONMENT_GET_CONTROLLER_DISPLAY_INTERFACE, &controller_display)
 		&& controller_display.interface_version >= 1 && controller_display.refresh != nullptr;
 	controller_audio = {};
 	controller_audio_ok = (environ_cb(RETRO_ENVIRONMENT_GET_CONTROLLER_AUDIO_INTERFACE, &controller_audio)
 			|| environ_cb(RETRO_ENVIRONMENT_GET_CONTROLLER_AUDIO_INTERFACE_FINAL, &controller_audio))
 		&& controller_audio.interface_version >= 1 && controller_audio.push != nullptr;
-	INFO_LOG(COMMON, "controller screens: %s, VMU beeps: %s",
-		controller_display_ok ? "handed over" : "not offered",
+	WARN_LOG(COMMON, "VMU screens: %s, VMU beeps: %s",
+		device_display_ok ? "handed over (device display)"
+			: controller_display_ok ? "handed over (controller display, older frontend)" : "not offered",
 		controller_audio_ok ? "handed over" : "mixed into the main stream");
 }
 
 void libretro_vmu_screen_changed(int bus_id, int bus_port)
 {
-	if (!controller_display_ok)
+	if (!device_display_ok && !controller_display_ok)
 		return;
 	const u32 *src = vmu_lcd_data[bus_id * 2 + bus_port];
 	u32 pixels[VMU_SCREEN_WIDTH * VMU_SCREEN_HEIGHT];
@@ -396,8 +408,12 @@ void libretro_vmu_screen_changed(int bus_id, int bus_port)
 			u32 c = src[y * VMU_SCREEN_WIDTH + (VMU_SCREEN_WIDTH - 1 - x)];
 			pixels[y * VMU_SCREEN_WIDTH + x] = ((c & 0xFF) << 16) | ((c >> 8) & 0xFF) << 8 | ((c >> 16) & 0xFF);
 		}
-	controller_display.refresh(controller_display.frontend_data, bus_id, bus_port,
-		pixels, VMU_SCREEN_WIDTH, VMU_SCREEN_HEIGHT);
+	if (device_display_ok)
+		device_display.refresh(device_display.frontend_data, RETRO_DEVICE_DISPLAY_CONTROLLER,
+			bus_id, bus_port, pixels, VMU_SCREEN_WIDTH, VMU_SCREEN_HEIGHT);
+	else
+		controller_display.refresh(controller_display.frontend_data, bus_id, bus_port,
+			pixels, VMU_SCREEN_WIDTH, VMU_SCREEN_HEIGHT);
 }
 
 bool libretro_vmu_beeps_routed()
