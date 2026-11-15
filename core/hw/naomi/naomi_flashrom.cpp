@@ -263,9 +263,16 @@ void configure_naomi_eeprom(const RomBootID *bootId)
 		}
 		naomi_cart_LoadBios(settings.content.fileName.c_str());
 	}
-	// Coin settings
-	if (config::ForceFreePlay && !settings.naomi.slave)
-		write_naomi_eeprom(9, 27 - 1);
+	// Coin settings. Free play is the system's coin setting 27 (byte 9). The option sets it; switched off, it puts back the
+	// game's own first setting (initEeprom's) if the setting is still free play: the EEPROM is saved, so the free play the
+	// option once wrote outlived it, and a game went on saying FREE PLAY with the option off.
+	if (!settings.naomi.slave)
+	{
+		if (config::ForceFreePlay)
+			write_naomi_eeprom(9, 27 - 1);
+		else if (read_naomi_eeprom(9) == 27 - 1)
+			write_naomi_eeprom(9, bootId->coinFlag[0][0] == 1 && bootId->coinFlag[0][3] != 27 ? bootId->coinFlag[0][3] - 1 : 0);
+	}
 }
 
 static u32 aw_crc32(const void *data, size_t len)
