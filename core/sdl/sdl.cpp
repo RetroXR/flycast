@@ -323,6 +323,35 @@ static std::shared_ptr<SDLMouse> getMouse(u32 mouseId)
 	return mouse;
 }
 
+static u32 openFileEventType()
+{
+	static const u32 eventType = SDL_RegisterEvents(1);
+	return eventType;
+}
+
+// Queue a game to be started from the main loop.
+// A user event is used rather than SDL_DROPFILE because sdl2-compat doesn't carry over
+// the file name of drop events pushed by the application, and crashes when converting them back.
+bool sdl_queue_open_file(const char *path)
+{
+	if (openFileEventType() == (u32)-1)
+		return false;
+	if (SDL_WasInit(SDL_INIT_EVENTS) == 0 && SDL_InitSubSystem(SDL_INIT_EVENTS) != 0)
+		return false;
+
+	SDL_Event event = {};
+	event.type = openFileEventType();
+	event.user.data1 = SDL_strdup(path);
+	if (event.user.data1 == nullptr)
+		return false;
+	if (SDL_PushEvent(&event) != 1)
+	{
+		SDL_free(event.user.data1);
+		return false;
+	}
+	return true;
+}
+
 void input_sdl_handle()
 {
 	SDLGamepad::UpdateRumble();
@@ -330,6 +359,12 @@ void input_sdl_handle()
 	SDL_Event event;
 	while (SDL_PollEvent(&event))
 	{
+		if (event.type == openFileEventType())
+		{
+			gui_start_game((const char *)event.user.data1);
+			SDL_free(event.user.data1);
+			continue;
+		}
 		switch (event.type)
 		{
 			case SDL_QUIT:
@@ -571,6 +606,7 @@ void input_sdl_handle()
 
 			case SDL_DROPFILE:
 				gui_start_game(event.drop.file);
+				SDL_free(event.drop.file);
 				break;
 
 			// Switch touchscreen support
@@ -612,7 +648,9 @@ void input_sdl_handle()
 
 void sdlReceiveSlaveKeyboardEvent(u16 scancode, bool pressed)
 {
-	sdl_keyboard->input((SDL_Scancode)scancode, pressed);
+	if (sdl_keyboard != nullptr)
+		// TODO raw input support
+		sdl_keyboard->input((SDL_Scancode)scancode, pressed);
 	if (pressed)
 	{
 		u32 flags = SDL_GetWindowFlags(window);
@@ -651,6 +689,9 @@ bool sdl_update_display_metrics(SDL_Window *window, u32 windowFlags)
 		settings.display.width = windowWidth;
 		settings.display.height = windowHeight;
 	}
+	// windows can report a 0x0 size when window is minimized
+	settings.display.width = std::max(settings.display.width, 1);
+	settings.display.height = std::max(settings.display.height, 1);
 
 	if (windowWidth > 0)
 		settings.display.pointScale = (float)settings.display.width / windowWidth;
@@ -913,6 +954,8 @@ bool sdl_recreate_window(u32 flags)
 			}
 		}
 	}
+	settings.display.width = std::max(settings.display.width, 1);
+	settings.display.height = std::max(settings.display.height, 1);
 
 	return true;
 }
@@ -962,7 +1005,7 @@ void sdl_window_create()
 			die("error initializing SDL Video subsystem");
 		}
 #if defined(__APPLE__) && defined(USE_VULKAN)
-		SDL_Vulkan_LoadLibrary("libvulkan.dylib");
+		SDL_Vulkan_LoadLibrary("@executable_path/../Frameworks/libMoltenVK.dylib");
 #endif
 	}
 	sdlDeInit.initialized = true;

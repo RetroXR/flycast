@@ -89,6 +89,7 @@ option(USE_HOST_SDL "Use host SDL library" ${USE_HOST_SDL_DEFAULT})
 option(USE_HOST_LIBCHDR "Use host libchdr" OFF)
 option(USE_OPENMP "Use OpenMP if available" ON)
 option(USE_VULKAN "Build with Vulkan support" ON)
+set(MOLTENVK_DYLIB "" CACHE FILEPATH "Path to macOS MoltenVK dylib for macOS Vulkan builds")
 option(USE_DX9 "Build with Direct3D 9 support" ON)
 option(USE_DX11 "Build with Direct3D 11 support" ON)
 option(LIBRETRO "Build libretro core" OFF)
@@ -205,6 +206,10 @@ elseif(LIBRETRO)
 		if(NOT CMAKE_SYSTEM_NAME STREQUAL "OpenBSD")
 			set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -Wl,--no-undefined")
 		endif()
+		if(NOT WIN32)
+			# keep bundled libs like glslang from binding to the frontend's copies
+			target_link_options(${PROJECT_NAME} PRIVATE "-Wl,--version-script,${CMAKE_CURRENT_SOURCE_DIR}/shell/libretro/link.T")
+		endif()
 	endif()
 	set_target_properties(${PROJECT_NAME} PROPERTIES OUTPUT_NAME "flycast_libretro"
 	  XCODE_ATTRIBUTE_CODE_SIGNING_ALLOWED "NO"
@@ -220,14 +225,6 @@ elseif(LIBRETRO)
 	if(ANDROID OR USE_GLES)
 		target_compile_definitions(${PROJECT_NAME} PRIVATE GLES GLES3 HAVE_OPENGLES HAVE_OPENGLES3 HAVE_OIT)
 		if(ANDROID)
-			# libandroid, for ASharedMemory_create. posix_vmem.cpp declares it
-			# weak and falls back to opening /dev/ashmem when it is null -- and
-			# Android 11 and later deny an app that device, so the fallback
-			# returns EACCES, nvmem is disabled, and the first guest memory
-			# access the dynarec emits faults with nothing to rewrite. Without
-			# this line the symbol is never resolved and the good path is dead
-			# code: the app build links it (see the ANDROID block further down),
-			# the libretro build did not.
 			target_link_libraries(${PROJECT_NAME} PRIVATE android)
 		endif()
     elseif(IOS)
@@ -828,6 +825,13 @@ endif()
 
 set(TINYGETTEXT_WO_ICONV ON)
 add_subdirectory(core/deps/tinygettext EXCLUDE_FROM_ALL)
+if(MSVC)
+	# language.cpp holds the native language names as non-ASCII literals. MSVC
+	# decodes sources without a BOM using the active code page, so on a non-UTF-8
+	# system locale those literals break the build (C2001/C2064). The main target
+	# already passes /utf-8; this dependency needs it too.
+	target_compile_options(tinygettext PRIVATE /utf-8)
+endif()
 target_include_directories(${PROJECT_NAME} PRIVATE core/deps/tinygettext/include)
 target_link_libraries(${PROJECT_NAME} PRIVATE tinygettext::tinygettext)
 
@@ -978,11 +982,6 @@ if(LIBRETRO)
 		shell/libretro/libretro.cpp
 		shell/libretro/LogManager.cpp
 		shell/libretro/LogManager.h
-		shell/libretro/microphone.cpp
-		shell/libretro/microphone.h
-		shell/libretro/MicrophoneInterface.h
-		shell/libretro/MicrophoneQueue.h
-		shell/libretro/MicrophoneResampler.h
 		shell/libretro/option.cpp
 		shell/libretro/oslib.cpp
 		shell/libretro/storage.cpp
@@ -1432,9 +1431,15 @@ if(NOT LIBRETRO)
 				${IOSURFACE_LIBRARY}
 				${MULTITOUCH_SUPPORT_LIBRARY})
 
-			add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
-				COMMAND ${CMAKE_COMMAND} -E copy "$ENV{VULKAN_SDK}/lib/libMoltenVK.dylib"
-				$<TARGET_FILE_DIR:flycast>/../Frameworks/libvulkan.dylib)
+			if(USE_VULKAN)
+				set(MOLTENVK_DYLIB_PATH "${MOLTENVK_DYLIB}")
+				if(NOT MOLTENVK_DYLIB_PATH OR NOT EXISTS "${MOLTENVK_DYLIB_PATH}")
+					message(FATAL_ERROR "A macOS MoltenVK dylib is required for macOS Vulkan builds. Run shell/apple/generate_xcode_project.command to download the configured MoltenVK release, or pass -DMOLTENVK_DYLIB=/path/to/libMoltenVK.dylib.")
+				endif()
+				add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
+					COMMAND ${CMAKE_COMMAND} -E copy "${MOLTENVK_DYLIB_PATH}"
+					$<TARGET_FILE_DIR:flycast>/../Frameworks/libMoltenVK.dylib)
+			endif()
 		endif()
 	elseif(UNIX)
 		if(NOT BUILD_TESTING)
@@ -1494,16 +1499,36 @@ endif()
 
 if(NINTENDO_SWITCH)
 	if(LIBRETRO)
+		# ar names a member after the basename of the object, so extracting every
+		# archive into one directory loses whatever two of them happen to share:
+		# zstd carries its own copy of xxhash.c, whose object lands on top of the
+		# real xxHash one and takes XXH32 with it. A directory per archive keeps
+		# them apart.
 		add_custom_target(combined ALL
-			COMMAND ${CMAKE_AR} -x $<TARGET_FILE:xxHash::xxhash>
-			COMMAND ${CMAKE_AR} -x $<TARGET_FILE:chdr-static>
-			COMMAND ${CMAKE_AR} -x $<TARGET_FILE:zip>
-			COMMAND ${CMAKE_AR} -x $<TARGET_FILE:elf>
-			COMMAND ${CMAKE_AR} -x $<TARGET_FILE:flycast::res>
-			COMMAND ${CMAKE_AR} -rs flycast_libretro_libnx.a *.o
-			COMMAND rm *.o
+			COMMAND ${CMAKE_COMMAND} -E rm -rf combined-objs
+			COMMAND ${CMAKE_COMMAND} -E make_directory
+				combined-objs/xxhash combined-objs/chdr combined-objs/zip
+				combined-objs/zstd combined-objs/elf combined-objs/tinygettext
+				combined-objs/res
+			COMMAND ${CMAKE_COMMAND} -E chdir combined-objs/xxhash
+				${CMAKE_AR} -x $<TARGET_FILE:xxHash::xxhash>
+			COMMAND ${CMAKE_COMMAND} -E chdir combined-objs/chdr
+				${CMAKE_AR} -x $<TARGET_FILE:chdr-static>
+			COMMAND ${CMAKE_COMMAND} -E chdir combined-objs/zip
+				${CMAKE_AR} -x $<TARGET_FILE:zip>
+			COMMAND ${CMAKE_COMMAND} -E chdir combined-objs/zstd
+				${CMAKE_AR} -x $<TARGET_FILE:libzstd_static>
+			COMMAND ${CMAKE_COMMAND} -E chdir combined-objs/elf
+				${CMAKE_AR} -x $<TARGET_FILE:elf>
+			COMMAND ${CMAKE_COMMAND} -E chdir combined-objs/tinygettext
+				${CMAKE_AR} -x $<TARGET_FILE:tinygettext::tinygettext>
+			COMMAND ${CMAKE_COMMAND} -E chdir combined-objs/res
+				${CMAKE_AR} -x $<TARGET_FILE:flycast::res>
+			COMMAND ${CMAKE_AR} -rs flycast_libretro_libnx.a combined-objs/*/*.o
+			COMMAND ${CMAKE_COMMAND} -E rm -rf combined-objs
 			WORKING_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_ARCHIVE_OUTPUT_DIRECTORY}
-			DEPENDS xxHash::xxhash chdr-static zip ${PROJECT_NAME})
+			DEPENDS xxHash::xxhash chdr-static zip libzstd_static
+				tinygettext::tinygettext ${PROJECT_NAME})
 	else()
 		nx_generate_nacp(flycast.nacp NAME "Flycast" AUTHOR "flyinghead, M4xw" VERSION "${GIT_VERSION}")
 		nx_create_nro(flycast NACP flycast.nacp ICON "${CMAKE_SOURCE_DIR}/shell/switch/flycast.jpeg")

@@ -21,8 +21,49 @@
 #include "hw/holly/holly_intc.h"
 #include "network/netservice.h"
 #include "serialize.h"
+#include "hw/sh4/sh4_sched.h"
+#include "cfg/option.h"
+#include <atomic>
+#include <deque>
+#include <mutex>
+#include <vector>
 
 static RTL8139State *rtl8139device;
+
+// The network backends (picotcp, DCNet) deliver frames from their own
+// threads, but the RTL8139 model and the SH-4 interrupt controller belong to
+// the emulation thread: raising the receive interrupt from another thread
+// races with SIIDRebuild() and can leave stray pending interrupts, which
+// the guest sees as an unhandled IRQ. Queue the frames here and hand them
+// to the chip from the SH-4 scheduler.
+static std::mutex rxMutex;
+static std::deque<std::vector<u8>> rxQueue;
+static std::atomic<bool> rxPending;
+static int rxSchedId = -1;
+constexpr size_t RX_QUEUE_MAX = 64;
+constexpr int RX_POLL_CYCLES = 1_sh4ms;
+
+static int rxDeliver(int tag, int cycles, int jitter, void *arg)
+{
+	if (rxPending.load(std::memory_order_acquire) && rtl8139device != nullptr)
+	{
+		std::lock_guard<std::mutex> _(rxMutex);
+		while (!rxQueue.empty() && rtl8139_can_receive(rtl8139device))
+		{
+			rtl8139_receive(rtl8139device, rxQueue.front().data(), rxQueue.front().size());
+			rxQueue.pop_front();
+		}
+		rxPending = !rxQueue.empty();
+	}
+	return RX_POLL_CYCLES;
+}
+
+static void rxClear()
+{
+	std::lock_guard<std::mutex> _(rxMutex);
+	rxQueue.clear();
+	rxPending = false;
+}
 
 // 1400 - 1600 GAPSPCI bridge registers
 // 1600 - 1700 standard PCI config
@@ -49,6 +90,7 @@ static u8 GAPS_ram[GAPSPCI_RAM_SIZE];
 static u8 GAPS_regs[GAPSPCI_REGS_SIZE];
 static u32 dmaOffset;
 static bool interruptPending;
+static constexpr u32 MAX_ETH_FRAME_SIZE = 1514;
 
 static void setInterrupt()
 {
@@ -64,7 +106,7 @@ void pci_set_irq(PCIDevice *pci_dev, int level)
 	setInterrupt();
 }
 
-void bba_Init()
+static void bba_Init()
 {
 	NICConf nicConf = { 0xc, 0xa, 0xf, 0xe, 0, 0 };
 	rtl8139device = rtl8139_init(&nicConf);
@@ -73,6 +115,10 @@ void bba_Init()
 	memset(&GAPS_regs[0], 0, sizeof(GAPS_regs));
 	memcpy(&GAPS_regs[0], "GAPSPCI_BRIDGE_2", 0x10);
 	memcpy(&GAPS_regs[0x1c], "SEGA", 4);
+
+	rxClear();
+	rxSchedId = sh4_sched_register(0, rxDeliver);
+	sh4_sched_request(rxSchedId, RX_POLL_CYCLES);
 }
 
 void bba_Term()
@@ -83,6 +129,12 @@ void bba_Term()
 		rtl8139_destroy(rtl8139device);
 		rtl8139device = nullptr;
 	}
+	if (rxSchedId != -1)
+	{
+		sh4_sched_unregister(rxSchedId);
+		rxSchedId = -1;
+	}
+	rxClear();
 }
 
 void bba_Reset(bool hard)
@@ -90,7 +142,8 @@ void bba_Reset(bool hard)
 	if (hard)
 	{
 		bba_Term();
-		bba_Init();
+		if (config::EmulateBBA && (settings.platform.isConsole() || settings.platform.isAtomiswave()))
+			bba_Init();
 	}
 }
 
@@ -213,11 +266,16 @@ ssize_t qemu_send_packet(RTL8139State *s, const uint8_t *buf, int size)
 	return size;
 }
 
+// Called from the network threads
 int bba_recv_frame(const u8 *data, u32 len)
 {
-	if (!rtl8139_can_receive(rtl8139device))
+	if (len < 6 || len > MAX_ETH_FRAME_SIZE)
 		return 0;
-	rtl8139_receive(rtl8139device, data, len);
+	std::lock_guard<std::mutex> _(rxMutex);
+	if (rxQueue.size() >= RX_QUEUE_MAX)
+		return 0;
+	rxQueue.emplace_back(data, data + len);
+	rxPending.store(true, std::memory_order_release);
 
 	return 1;
 }
@@ -234,6 +292,8 @@ void pci_dma_write(PCIDevice *dev, dma_addr_t addr, const void *buf, dma_addr_t 
 
 void bba_Serialize(Serializer& ser)
 {
+	if (rtl8139device == nullptr)
+		return;
 	ser << GAPS_regs;
 	ser << GAPS_ram;
 	ser << dmaOffset;
@@ -243,6 +303,8 @@ void bba_Serialize(Serializer& ser)
 
 void bba_Deserialize(Deserializer& deser)
 {
+	if (rtl8139device == nullptr)
+		return;
 	deser >> GAPS_regs;
 	deser >> GAPS_ram;
 	deser >> dmaOffset;
