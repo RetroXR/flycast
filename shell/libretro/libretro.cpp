@@ -380,16 +380,14 @@ static bool controller_audio_ok;
 static void probe_controller_interfaces()
 {
 	device_display = {};
-	device_display_ok = (environ_cb(RETRO_ENVIRONMENT_GET_DEVICE_DISPLAY_INTERFACE, &device_display)
-			|| environ_cb(RETRO_ENVIRONMENT_GET_DEVICE_DISPLAY_INTERFACE_FINAL, &device_display))
+	device_display_ok = (environ_cb(RETRO_ENVIRONMENT_GET_DEVICE_DISPLAY_INTERFACE, &device_display))
 		&& device_display.interface_version >= 1 && device_display.refresh != nullptr;
 	controller_display = {};
 	controller_display_ok = !device_display_ok
 		&& environ_cb(RETRO_ENVIRONMENT_GET_CONTROLLER_DISPLAY_INTERFACE, &controller_display)
 		&& controller_display.interface_version >= 1 && controller_display.refresh != nullptr;
 	controller_audio = {};
-	controller_audio_ok = (environ_cb(RETRO_ENVIRONMENT_GET_CONTROLLER_AUDIO_INTERFACE, &controller_audio)
-			|| environ_cb(RETRO_ENVIRONMENT_GET_CONTROLLER_AUDIO_INTERFACE_FINAL, &controller_audio))
+	controller_audio_ok = (environ_cb(RETRO_ENVIRONMENT_GET_CONTROLLER_AUDIO_INTERFACE, &controller_audio))
 		&& controller_audio.interface_version >= 1 && controller_audio.push != nullptr;
 	WARN_LOG(COMMON, "VMU screens: %s, VMU beeps: %s",
 		device_display_ok ? "handed over (device display)"
