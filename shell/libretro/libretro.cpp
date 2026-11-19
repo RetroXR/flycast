@@ -424,7 +424,8 @@ bool libretro_vmu_beeps_routed()
 bool libretro_push_vmu_beep(int vmu, const int16_t *frames, size_t count)
 {
 	return controller_audio_ok
-		&& controller_audio.push(controller_audio.frontend_data, vmu / 2, vmu % 2, frames, count);
+		&& controller_audio.push(controller_audio.frontend_data, RETRO_CONTROLLER_AUDIO_CONTROLLER,
+			vmu / 2, vmu % 2, frames, count);
 }
 
 // Now comes the interesting stuff
